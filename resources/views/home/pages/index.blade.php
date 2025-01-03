@@ -11,22 +11,23 @@
 </style>
 <div id="preloader" class="fullscreen loaded" style="display: none;">
     <div class="logo"><img src="https://hbsports.com.mx/images/header/header-1/logo-hardbeat.png" ></div>
-    <div class="lds-ring lds-ring-index circular"><div></div><div></div><div></div><div></div><span style="color:white;">Espere...</span></div>
-</div>
+    <div class="lds-ring lds-ring-index circular"><div></div><div></div><div></div><div></div><span style="color:white;">Espere...</span></div></div>
 
 <header class="header">
     <div class="header-inner ">
-        <div style="margin-top: 4em;">
+        <div class="nano">
             <div class="nano-content">
-                <div class="subtitle">
-                    <p style="margin-top:20px; padding: 20px; text-align:center;">
-                        VAMOS HUATULCO TE INVITA A PARTICIPAR EN LA 3ERA EDICIÓN DE LA CARRERA CON CAUSA EN APOYO A UN NUEVO AMANECER EN PRO DEL DISCAPACITADO A.C. <br>
-                        <!-- <span class="title-event"><b>{{$titulo}}</b></span> -->
-                    </p>                    
-                    <div class="col100" style="margin-top: -75px;">
+                <div class="subtitle"><br>
+                    <b>{{$titulo}}</b>
+                    <br>
+                    {{-- <p style="margin-top:20px; padding: 20px; text-align:justify;">
+                        
+                    </p> --}}
+                    <br>
+                    <div class="col100" style="margin-top: -35px;">
                         <h2 style="color:black; margin-bottom: 0;">
                             <b>DATOS DEL EVENTO</b>
-                        </h2>                        
+                        </h2>
                         <ul>
                             <li>
                                 <b>Lugar del Evento:</b>
@@ -54,102 +55,116 @@
                             </li>
                             <li>
                                 <b>Cupo:</b>
-                                <br>{{$opciones_evento['cupo']}} participantes
+                                <br>{{$opciones_evento['cupo']}}
                             </li>
-                        </ul>                                                
+                        </ul>
+                        <br>
+                        <b>NOTA:</b><br>
+                        <h3>COSTOS POR INSCRIPCIÓN</h3>
                         <div class="container-table100">
                             <div class="wrap-table100">
                                 <div class="table-100">
-                                    <div class="row-100 three-row header-100">
+                                    <div class="row-100 third-row header-100">
                                         <div class="cell-100 header-table">COSTOS POR INSCRIPCIÓN</div>
                                     </div>
-                                    <div class="row-100 three-row header-three">                                        
+                                    <div class="row-100 third-row header-third">
+                                        {{-- <div class="cell-100">DISTANCIA</div> --}}
                                         <div class="cell-100">
-                                            <strong>CATEGORÍA</strong>
+                                            DEL 05 DE ENERO AL 21 DE ENERO DEL 2024 <br>
+                                            PREINSCRIPCIÓN
                                         </div>
                                         <div class="cell-100">
-                                           <strong> DEL 20 DE NOVIEMBRE AL 30 DE NOVIEMBRE </strong><br>
-                                            
+                                            DEL 22 DE ENERO AL 2 DE FEBRERO DEL 2024 <br>
+                                            INSCRIPCIÓN
                                         </div>
                                         <div class="cell-100">
-                                            <strong>DEL 01 DE DICIEMBRE AL 09 DE ENERO</strong> <br>
-                                            
-                                        </div>
-                                        <div class="cell-100">
-                                            PRECIO EXTEMPORÁNEO <br>
-                                            <strong>DEL 10 Y 11 DE ENERO (ENTREGA DE PAQUETES)</strong> <br>                                          
-                                             
-                                            <span style="color:red;">(sujeto a disponibilidad)</span>
+                                            3 DE FEBRERO DEL 2024<br>
+                                            EXTEMPORÁNEO <br>
+                                            <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span>
                                         </div>
                                     </div>
-                                    <div class="row-100 three-row">                                        
-                                        <div class="cell-100">ADULTOS</div>
-                                        <div class="cell-100">$300.00</div>
-                                        <div class="cell-100">$350.00</div>
-                                        <div class="cell-100">$400.00</div>                                        
-                                    </div>
-                                    <div class="row-100 three-row">                                        
-                                        <div class="cell-100">NIÑOS</div>
-                                        <div class="cell-100">$200.00</div>
-                                        <div class="cell-100">$250.00</div>
-                                        <div class="cell-100">$300.00</div>                                        
+                                    <div class="row-100 third-row">
+                                        <div class="cell-100">$490.00</div>
+                                        <div class="cell-100">$580.00</div>
+                                        <div class="cell-100">$650.00</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                            <p style="font-size:18px;"><b>NOTA:</b></p>                            
-                            <p style="font-size:18px;"><b>Después del 16 de octubre, tallas sujetas a disponibilidad.</b></p>
-                            <p style="font-size:18px;"><b>Si desean adquirir la playera tendrá un costo extra de $160.00.</b></p>                            
-                        </div> -->
+                        <br>
+                        <b>NOTA: </b>
+                        <ul>
+                            <li>
+                                La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2024. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
+                            </li>
+                            <li>
+                                Es indispensable que el padre o tutor firme la hoja de exoneración en caso de que el participante tenga menos de 18 años.
+                            </li>
+                        </ul>
                         <br>
                         <b>DERECHOS DEL COMPETIDOR</b><br>
-                        <ul>                            
-                            <li>Medalla de finalista</li>
-                            <li>Playera conmemorativa </li>
-                            <li>Chip de cronometraje electrónico.</li>
-                            <li>Número de corredor</li>
-                            <li>Hidratación en ruta</li>
+                        <ul>
+                            <li>Playera.</li>
+                            <li>Medalla de finalista.</li>
+                            <li>Hidratación de ruta.</li>
                             <li>Zona de recuperación</li>
-                            <li>Servicio médico en ruta y recuperación</li>
-                            <li>Seguridad vial</li>
-                        </ul>                      
-
-                        <b>REGISTRO E INSCRIPCIÓN </b>
+                            <li>Servicio médico en ruta y recuperación.</li>
+                            <li>Chip de cronometraje electrónico.</li>
+                            <li>Seguridad víal.</li>
+                        </ul>
                         <br>
+                        <b>ENTREGA DEL KIT DE CORREDOR</b>
                         <ul>
-                            <li>En www.hbsports.com.mx/vamoshuatulco</li>     
                             <li>
-                                Nota: Para inscripciones y pago físico, visita Café Porto Huatulco todos los martes de diciembre de 8:30 am a 10:00 am y pregunta por Mark Kennedy 958 115 5597.
+                                <span style="color: var(--fourth-color);">Fecha y Lugar de Entrega: </span><br>
+                                Sábado, 3 de febrero de 2024, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Junta Previa: </span><br>
+                                Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Documentación Necesaria: </span><br>
+                                INE original para la entrega del chip. En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Firma de Hoja de Exoneración: </span><br>
+                                Se realizará durante la entrega de kits.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Documentación de Inscripción: </span><br>
+                                Presentar el documento proporcionado en el momento de la inscripción.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Condiciones de entrega:</span><br>
+                                Los participantes que no recojan su kit en el lugar, día y hora indicado, perderán todo derecho derivado de su inscripción.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Derechos de Uso de Nombre e Imagen:</span><br>
+                                Todo participante inscrito cede al comité organizador el derecho de utilizar su nombre e imagen en cualquier promoción relacionada con el evento.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Condiciones Únicas.</span><br>
+                                Estas bases son las únicas y deben respetarse en todo momento. Cualquier situación no contemplada será resuelta por el comité organizador.
                             </li>
                         </ul>
                         <br>
-                        <b>SERVICIO MÉDICO</b>
+                        <b>SERVICIOS PARA EL COMPETIDOR</b>
                         <ul>
-                            <li>El estado de salud de los competidores es responsabilidad de cada corredor y NO del comité organizador. 
-                                Se ofrecerá asistencia médica en caso de que se presente cualquier emergencia. Si padeces de alguna enfermedad es importante que debamos saber,
-                                y/o si eres alérgico a algún medicamento, por favor anótalo en la forma de inscripción.</li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Abastecimiento</span><br>
+                                Contarás con un abastecimiento. En este punto encontraras agua e isotónico, además de que contarás con el apoyo del personal de staff.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Zona de recuperación</span><br>
+                                Localizado al final de la meta. Encontrarás agua, isotónicos y fruta para recobrar un poco de energía. Ayuda especializada en primeros auxilios en caso de requerirlo.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Servicio médico</span><br>
+                                El estado de salud de los competidores es responsabilidad de cada corredor y NO del comité organizador. Se ofrecerá asistencia médica en primeros auxilios en caso de que se presente cualquier emergencia. <br>
+                                Si padeces de alguna enfermedad es importante que debamos saber, y/o si eres alérgico algún medicamento, por favor anótalo en la forma de inscripción.
+                            </li>
                         </ul>
-                        <br>
-                        <b>ENTREGA DE PAQUETE DE COMPETIDOR.</b>
-                        <ul>
-                            <li>
-                                ●	Lugar: Parque hundido de Chahué  <br>
-                                ●	Fecha: 11 de enero de 2025 <br>
-                                ●	Horario: De 14 a 18:00 hrs                      
-                            </li>
-                            <br>
-                            <li>
-                                Antes de recoger tu paquete de competidor es indispensable que llenes la forma de exoneración que te proporcionaremos.
-                            </li>
-                            <br>
-                            <li>
-                                Sin excepción alguna, no se entregará ningún paquete de corredor a quien no presente debidamente lleno y firmado dicho formato, así como una identificación oficial para corroborar su firma e identidad.
-                            </li>
-                            <br>
-                            <!-- <li>Todo participante inscrito cede al comité organizador el derecho de utilizar su nombre e imagen en cualquier promoción motivo del evento.</li>                             -->
-                        </ul>                        
-                        <br>
                     </div>
                 </div>
             </div>
@@ -161,14 +176,14 @@
     <div class="main-inner">
        
         <form action="#" method="post" class="registro-form tab-form-led" id="registro-form">
-            <!-- @csrf Una medida de seguridad contra ataques maliciosos -->
+            <!-- @csrf Una medida de seguridad cintra ataques maliciosos -->
             @csrf
             <input type="hidden" name="idd" id="idd" value="">
             <input type="hidden" name="idr" id="idr" value="">
             <h4 style="margin:0; margin-top: 1rem; margin-bottom: 1rem;">{{$titulo}}</h4>
-            <div style="font-size: 16px;">Para hacer tu registro correctamente deberás llenar todos los campos. <br> Si tienes alguna duda contáctanos al 951 243 4100</div>
-            <!-- <p style="font-size: 16px; font-weight: bold">NOTA: Para adquirir la playera, contáctanos al 951 243 4100 (costo extra de $160.00).</p> -->
-            <p style="color: #fa2d4d">-NOTA: Una vez registrado, te sugerimos hacer el pago en línea. Si generas formato de pago en OXXO tendrás 48 horas para realizar tu pago, de lo contrario tu registro expirará.</p>                      
+            <div style="font-size: 16px;">Para hacer tu registro correctamente deberás llenar todos los campos. Si tienes alguna duda contáctanos al 951 243 4100</div>
+            <div class="nota">-NOTA: Una vez registrado, te sugerimos hacer el pago en línea. Si generas formato de pago en OXXO tendrás 48 horas para realizar tu pago, de lo contrario tu registro expirará.</div>
+            <div class="nota">-NOTA: SOLO SE GARANTIZA LA TALLA DE PLAYERA A QUIEN SE INSCRIBA ANTES DEL 21 DE ENERO DE 2024</div>
             <diV id="response"></diV>
             <div class="fields">
                 <p>
@@ -201,54 +216,41 @@
                             <div class="input-icon"><i class="fa-solid fa-phone"></i></div>
                         </div>
                         <div class="input-group input-group-icon">
-                            <input type="text" name="sangre" id="sangre" placeholder="Tipo de Sangre" class="input-home" required>
+                            <input type="text" name="sangre" id="sangre" placeholder="Tipo de Sangre" class="input-home">
                             <div class="input-icon"><i class="fa-solid fa-droplet"></i></div>
                         </div>
                     </div>
                     <div class="input-container-group">
                         <div class="input-group input-group-icon">
-                            <input type="text" name="alergia" id="alergia" placeholder="Alergia" class="input-home" required>
+                            <input type="text" name="alergia" id="alergia" placeholder="Alergia" class="input-home">
                             <div class="input-icon"><i class="fa-solid fa-head-side-mask"></i></div>
                         </div>
 
                         <div class="input-group input-group-icon">
-                            <input type="text" name="padecimientos" id="padecimientos" placeholder="Padecimientos" class="input-home" required>
+                            <input type="text" name="padecimientos" id="padecimientos" placeholder="Padecimientos" class="input-home">
                             <div class="input-icon"><i class="fa-solid fa-heart-circle-xmark"></i></div>
                         </div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input type="text" name="medicamentos" id="medicamentos" placeholder="Medicamentos que utilice regularmente" class="input-home" required>
+                        <input type="text" name="medicamentos" id="medicamentos" placeholder="Medicamentos que utilice regularmente" class="input-home">
                         <div class="input-icon"><i class="fa-solid fa-kit-medical"></i></div>
                     </div>
                     <div class="input-group input-group-icon">
                         <input type="text" name="club" id="club" placeholder="Club" class="input-home">
                         <div class="input-icon"><i class="fa-solid fa-people-group"></i></div>
                     </div>
-                    {{-- <div class="input-group input-group-icon">
+                    <div class="input-group input-group-icon">
                         <select class="select-home" name="estado" id="estado" style="width: 100%;" required placeholder="Estado">
-                            <option disabled selected >Seleccione una opción</option>
-                            @foreach ($estados as $estado)                                 
-                                <option value="{{$estado->id}}">{{$estado->nombre}}</option>
+                            @foreach ($estados as $estado) 
+                                <option value="{{$estado->id}}">{{$estado->state}}</option>
                             @endforeach
                         </select>
-                        <div class="input-icon"><i class="fa-solid fa-school"></i></div>
-                    </div> --}}                    
-                    <div class="input-group input-group-icon">
-                        <select class="select-home" name="categoria" id="categoria" style="width: 100%;" placeholder="Categoria" required>
-                            <option value="" selected disabled>Seleccione una categoria</option>                            
-                        </select>
-                        <div class="input-icon"><i class="fa-solid fa-male"></i></div>
+                        <div class="input-icon"><i class="fa-solid fa-globe"></i></div>
                     </div>
-                    <!-- <div class="input-group input-group-icon" id="distancia-group">
-                        <select class="select-home" name="facultad" id="facultad" style="width: 100%;" placeholder="Distancia" required>                            
-                            <option disabled selected>Seleccione la distancia</option>
-                        </select>
-                        <div class="input-icon"><i class="fa-solid fa-road"></i></div>
-                    </div>                     -->
                     <div class="input-group input-group-icon">
-                        <select class="select-home" name="sexo" id="sexo" style="width: 100%;" placeholder="Sexo" required>
-                            <option disabled selected >Seleccione su sexo</option>
+                        <select class="select-home" name="sexo" id="sexo" style="width: 100%;" required placeholder="Sexo">
+                            <option disabled selected >Seleccione una opción</option>
                             <option value="M">-Masculino</option>
                             <option value="F">-Femenino</option>
                         </select>
@@ -260,7 +262,12 @@
                         </select>
                         <div class="input-icon"><i class="fa-solid fa-folder"></i></div>
                     </div>  --}}
-                     
+                    <div class="input-group input-group-icon">
+                        <select class="select-home" name="categoria" id="categoria" class="select-home" required style="width: 100%;" placeholder="Categoria">
+                            <option value="" selected disabled>Seleccione una categoria</option>
+                        </select>
+                        <div class="input-icon"><i class="fa-solid fa-male"></i></div>
+                    </div> 
                     {{-- <div class="input-group">
                         <select class="select-home" name="modalidad" id="modalidad" required style="width: 100%;" placeholder="Modalidad">
                             <option value=""></option>
@@ -268,16 +275,11 @@
                             <option value="selectivo">Selectivo</option>
                         </select>
                     </div> --}}
-                    {{-- <div class="input-group input-group-icon" id="playera-container">
-                        <input type="checkbox" name="playera" id="playera" class="input-home">
-                        <label for="playera">Agregar playera conmemorativa</label>
-                        <span style="color: #dd1313"><strong>+$160</strong></span>
-                    </div> --}}                    
                     <div class="input-group input-group-icon">
-                        <select class="select-home" name="talla" id="talla" style="width: 100%;" placeholder="Jersey">
+                        <select class="select-home" name="talla" id="talla" required style="width: 100%;" placeholder="Jersey">
                             <option value="" selected disabled>Seleccione su talla</option>
                         </select>
-                        <div class="input-icon"><i class="fa-solid fa-shirt"></i></div>
+                        <div class="input-icon"><i class="fa-solid fa-arrows-alt"></i></div>
                     </div>
                 </div>
                 {{-- <div class="field-wrapper border">
@@ -317,6 +319,7 @@
                 HOME
             </a>
         </li>
+
         <li>
             <a href="#" id="eventoLink">
                 REGLAMENTO
@@ -373,62 +376,72 @@
             </h2>
             <div class="container-table100">
                 <div class="wrap-table100">
-                    <div class="table-100" style="--limit-column:3;" >                        
+                    <div class="table-100" style="--limit-column:5;" >
+                        <div class="row-100 custom-row header-100">
+                            <div class="cell-100 header-table">FEMENIL - VARONIL</div>
+                        </div>
                         <div class="row-100 custom-row custom-header">
                             <div class="cell-100">CATEGORIA</div>
                             <div class="cell-100">RAMA</div>
+                            <div class="cell-100"></div>
                             <div class="cell-100">DISTANCIAS</div>
+                            <div class="cell-100"></div>
                         </div>
-                        <div class="row-100 custom-row header-100">
-                            <div class="cell-100 header-table">Adultos</div>
-                        </div>
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">JUVENIL (14-17 AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">5 KM</div>                            
-                        </div>
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">LIBRE (18-39 AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">5 KM</div>                            
+                        <div class="row-100 custom-row custom-header">
+                            <div class="cell-100"></div>
+                            <div class="cell-100"></div>
+                            <div class="cell-100">Carrera</div>
+                            <div class="cell-100">Natación</div>
+                            <div class="cell-100">Carrera</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">MASTER (40+ AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">5 KM</div>
+                            <div class="cell-100">Infantil 8 y menores</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">300 mts</div>
+                            <div class="cell-100">100 mts</div>
+                            <div class="cell-100">300 mts</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">VETERANOS (50+)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">5 KM</div>
-                        </div>                                               
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">CAMINATA (LIBRE)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">3 KM</div>
-                        </div>
-                        <div class="row-100 custom-row header-100">
-                            <div class="cell-100 header-table">NIÑOS</div>
+                            <div class="cell-100">Infantil (9-12 años)</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">1 KM </div>
+                            <div class="cell-100">200 mts</div>
+                            <div class="cell-100">500 mts</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">INFANTIL (4-5 AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">75 M</div>
-                        </div>
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">INFANTIL (6-7 AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">100 M</div>
-                        </div> 
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">INFANTIL (8-9 AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
-                            <div class="cell-100">500 M</div>
-                        </div>
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">INFANTIL (10-13 AÑOS)</div>
-                            <div class="cell-100">VARONIL / FEMENIL</div>
+                            <div class="cell-100">Infantil (13-15 años)</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
                             <div class="cell-100">1 KM</div>
+                            <div class="cell-100">400 mts</div>
+                            <div class="cell-100">1 KM</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Juvenil (16 a 17 años)</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">2.5 KM</div>
+                            <div class="cell-100">600 mts</div>
+                            <div class="cell-100">1.5 KM</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Libre (18 y mas)</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">2.5 KM</div>
+                            <div class="cell-100">600 mts</div>
+                            <div class="cell-100">1.5 KM</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Master 40 y mas</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">2.5 KM</div>
+                            <div class="cell-100">600 mts</div>
+                            <div class="cell-100">1.5 KM</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Mi primer acuatlon</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">1 KM</div>
+                            <div class="cell-100">200 mts</div>
+                            <div class="cell-100">500 mts</div>
                         </div>
                     </div>
                 </div>
@@ -438,15 +451,17 @@
 </script>
 
 <script id="home-plantilla" type="text/x-handlebars-template">
-    <div class="subtitle">
-        <p style="margin-top:20px; padding: 20px; text-align:center;">
-            VAMOS HUATULCO TE INVITA A PARTICIPAR EN LA 3ERA EDICIÓN DE LA CARRERA CON CAUSA EN APOYO A UN NUEVO AMANECER EN PRO DEL DISCAPACITADO A.C. <br>
-            <!-- <span class="title-event"><b>{{$titulo}}</b></span> -->
-        </p>                    
-        <div class="col100" style="margin-top: -75px;">
+    <div class="subtitle"><br>
+        <b>{{$titulo}}</b>
+        <br>
+        <!--<p style="margin-top:20px; padding: 10px; text-align:justify;">En el marco de las Fiestas de Noviembre de Puerto Escondido, El H. Ayuntamiento constitucional de San Pedro Mixtepec
+        en coordinación con la Regiduría de Turísmo, la Regiduría de Deportes y la Escuela de Cultura Física y Deporte de la UABJO invitan a participar
+        en su Triatlón denominado "Triatlón LED UABJO" en su séptima edición.</p> -->
+        <br>
+        <div class="col100" style="margin-top: -35px;">
             <h2 style="color:black; margin-bottom: 0;">
                 <b>DATOS DEL EVENTO</b>
-            </h2>                        
+            </h2>
             <ul>
                 <li>
                     <b>Lugar del Evento:</b>
@@ -474,102 +489,116 @@
                 </li>
                 <li>
                     <b>Cupo:</b>
-                    <br>{{$opciones_evento['cupo']}} participantes
+                    <br>{{$opciones_evento['cupo']}}
                 </li>
-            </ul>                                                
+            </ul>
+            <br>
+            <b>NOTA:</b><br>
+            <h3>COSTOS POR INSCRIPCIÓN</h3>
             <div class="container-table100">
                 <div class="wrap-table100">
                     <div class="table-100">
-                        <div class="row-100 three-row header-100">
+                        <div class="row-100 third-row header-100">
                             <div class="cell-100 header-table">COSTOS POR INSCRIPCIÓN</div>
                         </div>
-                        <div class="row-100 three-row header-three">                                        
+                        <div class="row-100 third-row header-third">
+                            {{-- <div class="cell-100">DISTANCIA</div> --}}
                             <div class="cell-100">
-                                <strong>CATEGORÍA</strong>
+                                DEL 05 DE ENERO AL 21 DE ENERO DEL 2024 <br>
+                                PREINSCRIPCIÓN
                             </div>
                             <div class="cell-100">
-                                <strong> DEL 20 DE NOVIEMBRE AL 30 DE NOVIEMBRE </strong><br>
-                                
+                                DEL 22 DE ENERO AL 2 DE FEBRERO DEL 2024 <br>
+                                INSCRIPCIÓN
                             </div>
                             <div class="cell-100">
-                                <strong>DEL 01 DE DICIEMBRE AL 09 DE ENERO</strong> <br>
-                                
-                            </div>
-                            <div class="cell-100">
-                                PRECIO EXTEMPORÁNEO <br>
-                                <strong>DEL 10 Y 11 DE ENERO (ENTREGA DE PAQUETES)</strong> <br>                                          
-                                    
-                                <span style="color:red;">(sujeto a disponibilidad)</span>
+                                3 DE FEBRERO DEL 2024<br>
+                                EXTEMPORÁNEO <br>
+                                <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span>
                             </div>
                         </div>
-                        <div class="row-100 three-row">                                        
-                            <div class="cell-100">ADULTOS</div>
-                            <div class="cell-100">$300.00</div>
-                            <div class="cell-100">$350.00</div>
-                            <div class="cell-100">$400.00</div>                                        
-                        </div>
-                        <div class="row-100 three-row">                                        
-                            <div class="cell-100">NIÑOS</div>
-                            <div class="cell-100">$200.00</div>
-                            <div class="cell-100">$250.00</div>
-                            <div class="cell-100">$300.00</div>                                        
+                        <div class="row-100 third-row">
+                            <div class="cell-100">$490.00</div>
+                            <div class="cell-100">$580.00</div>
+                            <div class="cell-100">$650.00</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-                <p style="font-size:18px;"><b>NOTA:</b></p>                            
-                <p style="font-size:18px;"><b>Después del 16 de octubre, tallas sujetas a disponibilidad.</b></p>
-                <p style="font-size:18px;"><b>Si desean adquirir la playera tendrá un costo extra de $160.00.</b></p>                            
-            </div> -->
+            <br>
+            <b>NOTA: </b>
+            <ul>
+                <li>
+                    La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2024. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
+                </li>
+                <li>
+                    Es indispensable que el padre o tutor firme la hoja de exoneración en caso de que el participante tenga menos de 18 años.
+                </li>
+            </ul>
             <br>
             <b>DERECHOS DEL COMPETIDOR</b><br>
-            <ul>                            
-                <li>Medalla de finalista</li>
-                <li>Playera conmemorativa </li>
-                <li>Chip de cronometraje electrónico.</li>
-                <li>Número de corredor</li>
-                <li>Hidratación en ruta</li>
+            <ul>
+                <li>Playera.</li>
+                <li>Medalla de finalista.</li>
+                <li>Hidratación de ruta.</li>
                 <li>Zona de recuperación</li>
-                <li>Servicio médico en ruta y recuperación</li>
-                <li>Seguridad vial</li>
-            </ul>                      
-
-            <b>REGISTRO E INSCRIPCIÓN </b>
+                <li>Servicio médico en ruta y recuperación.</li>
+                <li>Chip de cronometraje electrónico.</li>
+                <li>Seguridad víal.</li>
+            </ul>
             <br>
+            <b>ENTREGA DEL KIT DE CORREDOR</b>
             <ul>
-                <li>En www.hbsports.com.mx/vamoshuatulco</li>     
                 <li>
-                    Nota: Para inscripciones y pago físico, visita Café Porto Huatulco todos los martes de diciembre de 8:30 am a 10:00 am y pregunta por Mark Kennedy 958 115 5597.
+                    <span style="color: var(--fourth-color);">Fecha y Lugar de Entrega: </span><br>
+                    Sábado, 3 de febrero de 2024, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Junta Previa: </span><br>
+                    Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Documentación Necesaria: </span><br>
+                    INE original para la entrega del chip. En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Firma de Hoja de Exoneración: </span><br>
+                    Se realizará durante la entrega de kits.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Documentación de Inscripción: </span><br>
+                    Presentar el documento proporcionado en el momento de la inscripción.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Condiciones de entrega:</span><br>
+                    Los participantes que no recojan su kit en el lugar, día y hora indicado, perderán todo derecho derivado de su inscripción.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Derechos de Uso de Nombre e Imagen:</span><br>
+                    Todo participante inscrito cede al comité organizador el derecho de utilizar su nombre e imagen en cualquier promoción relacionada con el evento.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Condiciones Únicas.</span><br>
+                    Estas bases son las únicas y deben respetarse en todo momento. Cualquier situación no contemplada será resuelta por el comité organizador.
                 </li>
             </ul>
             <br>
-            <b>SERVICIO MÉDICO</b>
+            <b>SERVICIOS PARA EL COMPETIDOR</b>
             <ul>
-                <li>El estado de salud de los competidores es responsabilidad de cada corredor y NO del comité organizador. 
-                    Se ofrecerá asistencia médica en caso de que se presente cualquier emergencia. Si padeces de alguna enfermedad es importante que debamos saber,
-                    y/o si eres alérgico a algún medicamento, por favor anótalo en la forma de inscripción.</li>
+                <li>
+                    <span style="color: var(--fourth-color);">Abastecimiento</span><br>
+                    Contarás con un abastecimiento. En este punto encontraras agua e isotónico, además de que contarás con el apoyo del personal de staff.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Zona de recuperación</span><br>
+                    Localizado al final de la meta. Encontrarás agua, isotónicos y fruta para recobrar un poco de energía. Ayuda especializada en primeros auxilios en caso de requerirlo.
+                </li>
+                <li>
+                    <span style="color: var(--fourth-color);">Servicio médico</span><br>
+                    El estado de salud de los competidores es responsabilidad de cada corredor y NO del comité organizador. Se ofrecerá asistencia médica en primeros auxilios en caso de que se presente cualquier emergencia. <br>
+                    Si padeces de alguna enfermedad es importante que debamos saber, y/o si eres alérgico algún medicamento, por favor anótalo en la forma de inscripción.
+                </li>
             </ul>
-            <br>
-            <b>ENTREGA DE PAQUETE DE COMPETIDOR.</b>
-            <ul>
-                <li>
-                    ●	Lugar: Parque hundido de Chahué  <br>
-                    ●	Fecha: 11 de enero de 2025 <br>
-                    ●	Horario: De 14 a 18:00 hrs                      
-                </li>
-                <br>
-                <li>
-                    Antes de recoger tu paquete de competidor es indispensable que llenes la forma de exoneración que te proporcionaremos.
-                </li>
-                <br>
-                <li>
-                    Sin excepción alguna, no se entregará ningún paquete de corredor a quien no presente debidamente lleno y firmado dicho formato, así como una identificación oficial para corroborar su firma e identidad.
-                </li>
-                <br>
-                <!-- <li>Todo participante inscrito cede al comité organizador el derecho de utilizar su nombre e imagen en cualquier promoción motivo del evento.</li>                             -->
-            </ul>                        
-            <br>
         </div>
     </div>
 </script>
@@ -577,33 +606,108 @@
 <script id="reglamento-plantilla" type="text/x-handlebars-template">
     <div class="subtitle">
         <div class="col100" style="margin-top: 20px">
-            <p style="font-size: 20px"><b>Motivos de descalificación: </b></p>
-            <ul>
-                <li>No tener colocado el número de corredor al frente de la playera durante toda la competencia (sin dobleces, recortes ni alteraciones).</li>
-                <li><br></li>
-                <li>Estar delante de la línea de salida en el momento de dar la señal de inicio de carrera.</li>
-                <li><br></li>
-                <li>No correr la ruta completa.</li>
-                <li><br></li>
-                <li>No seguir la ruta marcada.</li>
-                <li><br></li>
-                <li>Actitudes antideportivas con corredores y/o jueces.</li>
-                <li><br></li>
-                <li>No concentrarse en el área de salida.</li>
-                <li><br></li>
-                <!-- <li>Correr acompañado de una mascota.</li> -->
-                <!-- <li><br></li> -->
-                <li>Ingresar a la carrera con bicibleta o cualquier vehículo motorizado.</li>
-            </ul>
+            <h2>REGLAMENTO</h2>
             <br>
-            {{-- <div>TIEMPO LÍMITE PARA LA PRUEBA:</div><br>
+            <span>
+                El presente reglamento tiene como objetivo establecer las normas y directrices que regirán el desarrollo del Acuatlón Deportivo Oaxaca 2024. Todos los participantes están obligados a conocer y cumplir con estas disposiciones para garantizar un evento seguro y justo. Cualquier violación a este reglamento puede resultar en descalificación.
+            </span>
+            <br>
+            <b>DISPOSICIONES GENERALES: </b><br>
             <ul>
                 <li>
-                    Por seguridad de los competidores el "tiempo máximo" para la carrera es de 01:00 hora, lapso durante el cual la ruta
-                    permanecerá cerrada y protegida por el personal de Tránsito y Seguridad Pública. El comité organizador NO se hace responsable
-                    por competidores que continúen en la ruta después del tiempo límite.
+                    La participación en el Acuatlón implica la aceptación de las reglas y regulaciones establecidas por el comité organizador.
                 </li>
-            </ul> --}}
+                <li>
+                    El reglamento tiene como objetivo garantizar la seguridad y equidad de la competencia.
+                </li>
+            </ul>
+            <br>
+            <b>INSCRIPCIONES: </b><br>
+            <ul>
+                <li>La inscripción es personal e intransferible. Cualquier intento de transferencia resultará en descalificación.</li>
+                <li>Los participantes deben proporcionar información veraz y completa durante el proceso de inscripción.</li>
+                <li>Solo se permitirá la participación a aquellos que hayan completado el proceso de inscripción de acuerdo con los plazos establecidos.</li>
+            </ul>
+            <br>
+            <b>EDAD Y DOCUMENTACIÓN: </b><br>
+            <ul>
+                <li>La edad válida para cada categoría es la que el participante tenga al 31 de diciembre de 2024.</li>
+                <li>Se requerirá la presentación de acta de nacimiento, credencial escolar o CURP para verificar la edad.</li>
+                <li>En caso de participantes menores de 18 años, es obligatoria la firma del padre o tutor en la hoja de exoneración.</li>
+            </ul>
+            <br>
+            <b>SEGURIDAD Y EQUIPO: </b><br>
+            <ul>
+                <li>Todos los participantes deben usar el equipo obligatorio durante toda la competencia.</li>
+                <li>EN LA ETAPA DE CARRERA EL TORSO DEBE IR CUBIERTO, EL NUMERO DE COMPETENCIA ASIGNADO DEBE IR EN LA PARTE FRONTAL DEL TORSO.</li>
+                <li>EL USO DE GOOGLES Y GORRO DURANTE LA ETAPA DE NATACIÓN ES OBLIGATORIO.</li>
+            </ul>
+            <br>
+            <b>COMPORTAMIENTO: </b><br>
+            <ul>
+                <li>Se espera que todos los participantes mantengan un comportamiento deportivo y respetuoso en todo momento.</li>
+                <li>Cualquier forma de conducta antideportiva, como el bloqueo intencional o el comportamiento agresivo, resultará en descalificación.</li>
+            </ul>
+            <br>
+            <b>DESARROLLO DE LA COMPETENCIA: </b>
+            <ul>
+                <li>Todos los participantes deben seguir la ruta oficial y las indicaciones del personal de seguridad.</li>
+                <li>No se permite el acceso a la zona de competencia a personas ajenas al evento.</li>
+                <li>La participación en la junta previa es obligatoria para conocer la ruta y el reglamento de competencia.</li>
+            </ul>
+            <br>
+            <b>ENTREGA DEL KIT: </b><br>
+            <ul>
+                <li>La entrega del kit se realizará exclusivamente en la fecha y lugar designados.</li>
+                <li>La firma de la hoja de exoneración es requisito para recibir el kit.</li>
+            </ul>
+            <br>
+            <b>INICIO DE LA COMPETENCIA: </b><br>
+            <ul>
+                <li>La competencia comenzará a las 07:00 a.m. del domingo, 4 de febrero de 2024.</li>
+                <li>Se seguirán las instrucciones del personal de organización para el inicio y durante la competencia.</li>
+            </ul>
+            <br>
+            <b>CRONOMETRAJE ELECTRÓNICO: </b><br>
+            <ul>
+                <li>Cada participante recibirá un chip para el cronometraje electrónico. Este debe colocarse según las instrucciones proporcionadas.</li>
+                <li>La pérdida o mal uso del chip resultará en la descalificación automática.</li>
+            </ul>
+            <br>
+            <b>ZONAS DE TRANSICIÓN:</b><br>
+            <ul>
+                <li>Habrá zonas designadas para la transición de natación a carrera. Estas áreas deben ser respetadas para evitar sanciones.</li>
+            </ul>
+            <br>
+            <b>ABASTECIMIENTO E HIDRATACIÓN: </b><br>
+            <ul>
+                <li>Puntos de abastecimiento y zonas de hidratación estarán ubicados a lo largo del recorrido. Se anima a los participantes a mantenerse hidratados.</li>
+            </ul>
+            <br>
+            <b>DERECHOS DE USO DE NOMBRE E IMAGEN:</b><br>
+            <ul>
+                <li>Al inscribirse, los participantes otorgan al comité organizador el derecho de utilizar su nombre e imagen con fines promocionales.</li>
+            </ul>
+            <br>
+            <b>DESCALIFICACIONES:</b><br>
+            <ul>
+                <li>Cualquier violación a las normas establecidas puede resultar en descalificación.</li>
+                <li>El uso de sustancias prohibidas o cualquier forma de dopaje llevará a la descalificación inmediata.</li>
+            </ul>
+            <br>
+            <b>DECISIONES DEL COMITÉ: </b><br>
+            <ul>
+                <li>El comité organizador tiene la autoridad para tomar decisiones finales sobre cualquier situación no contemplada en este reglamento.</li>
+            </ul>
+            <br>
+            <span>
+                Al participar en el Acuatlón Deportivo Oaxaca 2024, todos los competidores aceptan y se comprometen a cumplir con este reglamento. 
+                El desconocimiento de las normas no exime de su cumplimiento. ¡Les deseamos a todos los participantes una competencia exitosa y llena de logros!
+            </span>
+            <br>
+            <b>TRANSITORIOS: </b><br>
+            <b>UNICO. MODIFICACIONES AL REGLAMENTO: </b><br>
+            <p>El comité organizador se reserva el derecho de realizar modificaciones al reglamento, las cuales serán comunicadas a los participantes con anticipación.</p>
         </div>
     </div>
 </script>
@@ -615,63 +719,24 @@
             <h2 style="color:black; margin-bottom: 0;">
                 <b>PREMIACIÓN</b>
             </h2>
-            <div class="container-table100">
-                <div class="wrap-table100">
-                    <div class="table-100" style="--limit-column:5;">
-                        <div class="row-100 custom-row header-100">
-                            <div class="cell-100 header-table">LIBRE</div>
-                        </div>
-                        <div class="row-100 custom-row header-custom"> 
-                            <div class="cell-100">
-                                <strong>CATEGORÍA</strong>
-                            </div>
-                            <div class="cell-100">
-                                <strong>EDAD</strong>
-                            </div>                           
-                            <div class="cell-100">
-                                <strong>1ER LUGAR</strong>
-                            </div>
-                            <div class="cell-100">
-                                <strong>2DO LUGAR</strong>
-                            </div>
-                            <div class="cell-100">
-                                <strong>3ER LUGAR</strong>
-                            </div>                            
-                        </div>
-                        <div class="row-100 custom-row">                                        
-                            <div class="cell-100">Juvenil</div>
-                            <div class="cell-100">14-17 años</div>
-                            <div class="cell-100">$900.00</div>
-                            <div class="cell-100">$800.00</div>
-                            <div class="cell-100">$700.00</div>                                                                    
-                        </div>
-                        <div class="row-100 custom-row">                                        
-                            <div class="cell-100">Libre</div>
-                            <div class="cell-100">18-39 años</div>
-                            <div class="cell-100">$2,000.00</div>
-                            <div class="cell-100">$1,500.00</div>
-                            <div class="cell-100">$1,000.00</div>                                                                    
-                        </div>
-                        <div class="row-100 custom-row">                                        
-                            <div class="cell-100">Máster</div>
-                            <div class="cell-100">40-49 años</div>
-                            <div class="cell-100">$1,000.00</div>
-                            <div class="cell-100">$900.00</div>
-                            <div class="cell-100">$800.00</div>                                                                    
-                        </div>  
-                        <div class="row-100 custom-row">                                        
-                            <div class="cell-100">Veteranos</div>
-                            <div class="cell-100">50+</div>
-                            <div class="cell-100">$1,000.00</div>
-                            <div class="cell-100">$900.00</div>
-                            <div class="cell-100">$800.00</div>                                                                    
-                        </div>                      
-                    </div>
-                </div>
-            </div>
-            <p style="font-size: 18px">
-                Carrera de niños regalos sorpresa
-            </p>
+            <span>
+                Al concluir la competencia y tras recibir los resultados preliminares por parte de los jueces, <br>
+                el comité organizador llevará a cabo la ceremonia de premiación en presencia de invitados, medios de comunicación y el público en general.
+            </span>
+            <br>
+            <b>NOTA: </b>
+            <ul>
+                <li>
+                    Únicamente se premia a los 3 primeros lugares de cada categoría.
+                </li>
+                <li>
+                    Reconocimiento a los 3 primeros lugares de cada categoría.
+                </li>
+                <li>
+                    Si el competidor no recoge su premio, en el momento de la premiación, tendrá 10 días naturales después del evento para recogerlo en las instalaciones del Deportivo Oaxaca. <br>
+                    En caso de pasar después del termino estipulado, el comité organizador no podrá hacerse responsable de la entrega.
+                </li>
+            </ul>
         </div>
     </div>
 </script>
@@ -690,13 +755,13 @@
             <img src="{{asset("img/hbs.png")}}" height="90">
         </center>
         <div style="text-align: center;">
-            <span id="ttx+AF8-regsuccess" style="color:green; font-weight: bold"> Gracias por registrarte en la  {{$titulo}} </span>
+            <span id="ttx+AF8-regsuccess" style="color:green; font-style: italic;"> Gracias por registrarte en la carrera {{$titulo}} </span>
         </div>
         <p style="text-align: justify;">
             <span style="color:red !important" id="modal_message"> Te recordamos que no estas formalmente inscrito hasta realizar el pago, al dar clic en el botón de abajo te mostraremos la ventana de pago, donde podrás elegir pago con tarjeta y pago referenciado en tiendas OXXO, si pagas con tarjeta bancaria (débito o crédito) se te asignara un numero de corredor y quedaras formalmente inscrito. si eliges pago en OXXO, tendrás un lapso de 48 horas para realizar el pago, de lo contrario se borrara este pre-registro y tendrás que volver a hacerlo.
             </span>
         </p>
-        <p style="text-align: justify; font-weight: bold" id="modal_end_message">
+        <p style="text-align: justify;" id="modal_end_message">
            Te sugerimos hacerlo a la brevedad ya que los lugares están disponibles hasta agotar existencias.
         </p>
         <center>
@@ -729,7 +794,7 @@
         </a>
     </div>
 
-    <a href="#" class="test" id="testButton" style="display:none;">↑</a>
+    <!-- <a href="#" class="test" id="testButton" style="display:none;">↑</a>
     <a href="#registro-form" class="test-2" id="testDos">REGISTRO</a>
     <style>       
         .test {
@@ -795,5 +860,5 @@
                 }
             });
         });
-    </script>
+    </script> -->
 @stop

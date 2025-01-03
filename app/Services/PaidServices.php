@@ -13,12 +13,9 @@ class PaidServices
     private $thirdComision = 0;
 
     private $defineTeenAndFivePrices = [
-        "first" => 300,
-        "second" => 350,
-        "third" => 400,
-        "first_kids" => 200,
-        "second_kids" => 250,
-        "third_kids" => 300        
+        "first" => 550,
+        "second" => 600,
+        "third" => 650        
     ];
 
     public function getCurrentDateTime()
@@ -39,23 +36,22 @@ class PaidServices
         return $data['formatted'];
     }
 
-    public function definePaidAmount($category)
+    public function definePaidAmount()
     {
         $priceAmount = $this->defineTeenAndFivePrices; 
 
-        $start_first_date = "2024-11-20";
-        $end_first_date = "2024-11-30";
+        $start_first_date = "2025-01-01";
+        $end_first_date = "2025-01-24";
 
-        $start_second_date = "2024-12-01";
-        $end_second_date = "2025-01-09";
+        $start_second_date = "2025-01-25";
+        $end_second_date = "2025-02-13";
 
-        $start_third_date = "2025-01-10";
-        $end_third_date = "2025-01-11";
+        $start_third_date = "2025-02-14";
+        $end_third_date = "2025-02-15";
 
         $current_date = date('Y-m-d');
 
         try {
-            if ($category >= 110 && $category <= 114){//110-114
                 if ($current_date >= $start_first_date && $current_date <= $end_first_date) {
                     return ["monto" => $priceAmount['first'], "comision" => $this->firstComision];
                 } else if ($current_date >= $start_second_date && $current_date <= $end_second_date) {
@@ -65,18 +61,7 @@ class PaidServices
                 } else {
                     return ["monto" => $priceAmount['third'], "comision" => $this->thirdComision];
                 }
-            }
-            if($category >=115 && $category <= 118){//110-114
-                if ($current_date >= $start_first_date && $current_date <= $end_first_date) {
-                    return ["monto" => $priceAmount['first_kids'], "comision" => $this->firstComision];
-                } else if ($current_date >= $start_second_date && $current_date <= $end_second_date) {
-                    return ["monto" => $priceAmount['second_kids'], "comision" => $this->secondComision];
-                } else if ($current_date >= $start_third_date && $current_date <= $end_third_date) {
-                    return ["monto" => $priceAmount['third_kids'], "comision" => $this->thirdComision];
-                } else {
-                    return ["monto" => $priceAmount['third_kids'], "comision" => $this->thirdComision];
-                }
-            }
+            
         } catch (Exception $e) {
             return $e->getMessage();
         }

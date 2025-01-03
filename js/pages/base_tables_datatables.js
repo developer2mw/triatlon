@@ -171,15 +171,15 @@ var BaseTableDatatables = function() {
                                 const ncorredor = datos.Info.ncor;
 
                                 const categories = [                                    
-                                    { id: 110, descripcion: "Juvenil(14-17 años)" },
-                                    { id: 111, descripcion: "Libre(18-39 años)" },
-                                    { id: 112, descripcion: "Máster(40-49 años) " },
-                                    { id: 113, descripcion: "Veteranos (50+)" },
-                                    { id: 114, descripcion: "Caminata (libre)" },
-                                    { id: 115, descripcion: "Infantil 4-5 años" },
-                                    { id: 116, descripcion: "Infantil 6-7 años" },
-                                    { id: 117, descripcion: "Infantil 8-9 años" },
-                                    { id: 118, descripcion: "Infantil 10-13 años" },
+                                    { id: 119, descripcion: "Infantil 5-6 años" },
+                                    { id: 120, descripcion: "Infantil 7-8 años" },
+                                    { id: 121, descripcion: "Infantil 9-10 años" },
+                                    { id: 122, descripcion: "Infantil 11-12 años" },
+                                    { id: 123, descripcion: "Infantil 13-15 años" },
+                                    { id: 124, descripcion: "Juvenil Menor (16-17 años)" },
+                                    { id: 125, descripcion: "Libre (18-39 años)" },
+                                    { id: 126, descripcion: "Master (40 y más)" },
+                                    { id: 127, descripcion: "Mi primer acuatlón (18 y más)" },                                    
                                     // Agrega más categorías según sea necesario
                                 ];
 

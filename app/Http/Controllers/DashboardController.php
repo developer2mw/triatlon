@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
-    public $tallaM = array("XS" => 200, "S" => 200, "M" => 300, "L" => 200, "XL" => 200, "XXL" => 200);
-    public $tallaF = array('XS' => 200, 'S' => 200, 'M' => 200, 'L' => 200, "XL" => 200, 'XXL' => 200);
-    public $tallaInfantil = array('4' => 200,'6' => 200, '8' => 200, '10' => 200,'12' => 200, '14' => 200);
+    public $tallaM = array("XS" => 15, "S" => 15, "M" => 15, "L" => 5, "XL" => 5);
+    public $tallaF = array('S' => 10, 'M' => 15, 'L' => 10);
+    public $tallaInfantil = array('6' => 5,'8' => 5,'12' => 5, '14' => 10);
     private $dashboardServices;
     private $eventServices;
     private $Participant;
@@ -579,7 +579,7 @@ class DashboardController extends Controller
         try {
             //Se arman los datos para mandar por medio del correo electronico
             $content = [
-                'titulo' => "CARRERA VAMOS HUATULCO 3ERA EDICIÓN",
+                'titulo' => "ACUATLÓN 2025",
                 'image_url' => $image,
                 'participante' => $request->nombre,
                 'numero' => $request->ncorredor,
@@ -590,7 +590,7 @@ class DashboardController extends Controller
             $mail = new Mail(); // Se instancia la clase Mail
             //Se pasan como parametros: el destinatario del correo electronico, el contenido y un mensaje que se usa como un asunto
             //ESTA FORMA DE MANDAR LOS EMAILS SE LOGRA POR MEDIO DE USAR LAS FUNCIONES DE ARTISAN "php artisan make: mail 'namex'"
-            $mail::to($request->email)->send(new \App\Mail\HBSportMail($content, "Inscripción a VAMOS HUATULCO 3ERA EDICIÓN")); 
+            $mail::to($request->email)->send(new \App\Mail\HBSportMail($content, "Inscripción a ACUATLÓN 2025")); 
 
             return response()->json(["status" => "true", "response" =>"Correo enviado"]);
 

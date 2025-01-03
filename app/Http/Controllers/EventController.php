@@ -29,10 +29,10 @@ use Illuminate\Support\Facades\Mail;
 
 class EventController extends Controller
 {
-    public $idevento = "16";
-    public $evento = "VAMOS HUATULCO 3ERA. EDICIÓN";
-    public $tituloCorreo = "VAMOS HUATULCO 3ERA. EDICIÓN";
-    public $tituloExcel = "VAMOS_HUATULCO_3ERA_EDICIÓN";
+    public $idevento = "17";
+    public $evento = "ACUTLÓN 7TIMA EDICIÓN";
+    public $tituloCorreo = "ACUTLÓN 7TIMA EDICIÓN";
+    public $tituloExcel = "ACUATLON_7TIMA_EDICION";
     public $phone = "(951) 243 41 00";
     public $secondPhone = "(951) 243 41 00";
     public $mailImage = "";
@@ -41,7 +41,7 @@ class EventController extends Controller
     public $comision = 80;
     public $salida = "Parque hundido de Chahué";
     public $meta = "Parque hundido de Chahué";
-    public $distancias = "5KM corriendo, 3KM caminando";
+    public $distancias = "pendientes";
     public $fecha = "Domingo, 12 de enero de 2025";
     public $cupo = "300 competidores.";
     public $horario_arranque = "06:30 a.m.";
@@ -59,7 +59,7 @@ class EventController extends Controller
     private $ParticipantDiscount;
     private $Paid;
     private $EventCategory;
-    private $finished_racing = "2025-01-12"; //EL SISTEMA DEBE BLOQUEARSE EL DIA 07 DE MARZO A LAS 12:00 AM PARA YA NO RECIBIR MAS INSCRIPCIONES
+    private $finished_racing = "2025-01-13"; //EL SISTEMA DEBE BLOQUEARSE EL DIA 13 DE FEBRERO A LAS 11:59 PM PARA YA NO RECIBIR MAS INSCRIPCIONES
     private $EventCategoryDistance;
     public $ParticipantFaculty;
     public $ParticipantTShirt;
@@ -468,7 +468,7 @@ class EventController extends Controller
         // dd($id);
         $participantCategory = $participantNumber->id_event_category_distance;
         
-        $total = $this->paidServices->definePaidAmount($participantCategory);// Se obtiene el monto a pagar y la comisión
+        $total = $this->paidServices->definePaidAmount();// Se obtiene el monto a pagar y la comisión
         $listOfCategories = $this->dashboardServices->listAllCategoriesForEvent($this->idevento);
         
         $categoria = $this->dashboardServices->generateCategory($participantNumber->id_event_category_distance, $listOfCategories);
@@ -574,7 +574,7 @@ class EventController extends Controller
 
         $participant = Participant::where('participant.email', $data['email'])
         ->join('participant_number', 'participant.id', '=', 'participant_number.id_participant')
-        ->whereIn('participant_number.id_event_category_distance', [110,111,112,113,114,115,116,117,118]) //Actualizar las categorias segun el evento
+        ->whereIn('participant_number.id_event_category_distance', [119,120,121,122,123,124,125,126,127]) //Actualizar las categorias segun el evento
         ->select('participant.id')
         ->first();
 
@@ -590,7 +590,7 @@ class EventController extends Controller
                 'image_url' => $image,
                 'participante' => $data['name'],
                 'categoria' => $data['categoria'],
-                'link' => "https://www.hbsports.com.mx/vamoshuatulco/checkout/".$idParticipant,                
+                'link' => "https://www.hbsports.com.mx/acuatlon2025/checkout/".$idParticipant,                
             ];
             $mail = new Mail(); // Se instancia la clase Mail
             //Se pasan como parametros: el destinatario del correo electronico, el contenido y un mensaje que se usa como un asunto

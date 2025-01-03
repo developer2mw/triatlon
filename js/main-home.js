@@ -61,24 +61,31 @@ $(document).ready(function () {
             $("#nacimiento").val("");
         },
     });
-
+    // if(!mobileCheck) {
+    //     alert("mobile");
+    // } else {
+    //     alert("nomobile");
+    // }
     // limit participant age
-    $("#edad").on('input', function() {
-        const edadMaxima = 80; // Edad máxima permitida
-    
-        // Verificar si la edad es mayor que la edad máxima
-        if ($(this).val() > edadMaxima) {
-            $(this).val('');
-            $("#message-age").text(`La edad no puede ser mayor de ${edadMaxima} años.`);
-            mostrarMensajeTemporal("#message-age");
+    $("#edad").change(function () {
+        //Se valida que la edad se encuentre dentro del rango de fechas de 3 a 120 años
+        const edadLimite = 3;
+        if ($(this).val() < edadLimite) {
+            $(this).val(0);
+            $("#message-age").text(
+                `Debe ser mayor de ${edadLimite} años para acceder a esta competencia.`
+            );
+            setTimeout(function () {
+                $("#message-age").text("");
+            }, 1500);
+        } else if ($(this).val() > 120) {
+            $(this).val(0);
+            $("#message-age").text("La edad ingresada no es válida");
+            setTimeout(function () {
+                $("#message-age").text("");
+            }, 1500);
         }
     });
-    
-    function mostrarMensajeTemporal(selector) {
-        setTimeout(function () {
-            $(selector).text("");
-        }, 1500);
-    }
 });
 
 WebFontConfig = {
@@ -102,71 +109,77 @@ WebFontConfig = {
 
 const CATEGORIAS = eventCategories;
 
-console.log(eventCategories);
+// const CATEGORIAS = [
+//     { id: "6", text: "INFANTIL 8 Y MENORES" },
+//     { id: "7", text: "INFANTIL (9-12 AÑOS)" },
+//     { id: "8", text: "INFANTIL (13-15 AÑOS)" },
+//     { id: "9", text: "JUVENIL (16 A 17 AÑOS)" },
+//     { id: "10", text: "LIBRES (18 Y MAS)" },
+//     { id: "11", text: "MASTER 40 Y MAS" },
+//     { id: "12", text: "MI PRIMER ACUATLON" },
+// ]
 
+// when select option enabled package options
+$(document).on("change", "#sexo", function (e) {
+    e.preventDefault();
+    //reset all select values
+    $("#paquete").text("Paquete"); //Cambio en el texto
+    $("#paquete").val(""); //Cambio en el valor
+    $("#categoria").text("Categoria");
+    $("#categoria").val("");
+    $("#talla").text("Talla");
+    $("#talla").val("");
 
-const TALLA = [
-    { id: "NA", text: "NO APLICA" },    
-]
-const TALLAS = [
-    { id: "XS", text: "XS" },
-    { id: "S", text: "S" },
-    { id: "M", text: "M" },
-    { id: "L", text: "L" },
-    { id: "XL", text: "XL" },
-    { id: "XXL", text: "XXL" },
-]
-const TALLAS_INFANTILES = [    
-    { id: "4", text: "4" },
-    { id: "6", text: "6" },
-    { id: "8", text: "8" },
-    { id: "10", text: "10" },
-    { id: "12", text: "12" },
-    { id: "14", text: "14" },
-]
+    const sexo = $("#sexo").val(); //Se obtiene el valor alojado en el campo sexo
 
-$(document).ready(function() {
-    // Llenar el select de categorías
-    chargeSelectCat(CATEGORIAS, "categoria");
+    if (sexo !== null || sexo !== "")
+        chargeSelectCat(CATEGORIAS, "categoria")
+});
+// when select package options enable categories
+$(document).on("change", "#paquete", function (e) {
+    e.preventDefault();
+    const paquete = $("#paquete").val();
+    const sexo = $("#sexo").val();
+    // reset after select values
+    $("#categoria").text("Categoria");
+    $("#categoria").val("");
+    $("#talla").text("Talla");
+    $("#talla").val("");
 
-    // Manejador de cambios para el campo 'categoria'
-    $('#categoria').change(function() {
-        const selectedCategory = $(this).val();  // Obtener valor seleccionado de categoría
-        console.log('cat cat',selectedCategory);        
-        // Si la categoría es Libre o Master, mostrar tallas de adulto
-        if (selectedCategory >= '115' && selectedCategory <= '118' ) {
-            chargeSelect(TALLAS_INFANTILES, "talla");  // Tallas de adulto
-        } else {
-            chargeSelect(TALLAS, "talla");  // Tallas infantiles
-        }
-    });
-    // Inicialmente, cargar NO APLICA en el campo de talla
-    chargeSelect(TALLA, "talla");
+    if ((paquete !== null || paquete !== "") && (sexo !== null || sexo !== ""))
+        chargeSelectCat(CATEGORIAS[paquete], "categoria");
 });
 
-// Función para llenar el select con las opciones de categorías
-function chargeSelectCat(optionsArray, selectId) {
-    const select = $('#' + selectId);
-    select.empty();  // Limpiar opciones previas
-    optionsArray.forEach(option => {
-        select.append(new Option(option.id_category, option.category));
+$(document).on("change", "#categoria", function (e) {
+    e.preventDefault();
+
+    const categoria = $("#categoria").val();
+    const sexo = $("#sexo").val();
+    $("#talla").text("Talla");
+    $("#talla").val("");
+    console.log(categoria);
+    
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    })
+    $.ajax({
+        url: `${path}`,
+        type: 'POST',
+        data: {
+            gender: categoria >= 124 ? sexo : "I"
+        },
+        success: function(response) {
+            chargeSelect(response, "talla")
+        }
     });
-}
-
-// Función para llenar el select con las opciones de distancias o tallas
-function chargeSelect(optionsArray, selectId) {
-    const select = $('#' + selectId);
-    select.empty();  // Limpiar opciones previas
-    optionsArray.forEach(option => {
-        select.append(new Option(option.id, option.text));
-    });
-}
-
-
+});
 
 function chargeSelect(options, select) {
     var auxCat =
-        "<option value='' disabled selected>Seleccione una opción </option>";
+        "<option value='' disabled selected>Seleccione una opción</option>";
 
     $.each(options, function (ind, elem) {
         //función each de jQuery para recorrer las opciones del elemento options "ind es del indice del elemento"
@@ -182,7 +195,7 @@ function chargeSelect(options, select) {
 
 function chargeSelectCat(options, select) {
     var auxCat =
-        "<option value='' disabled selected>Seleccione una categoria </option>";
+        "<option value='' disabled selected>Seleccione una categoria</option>";
 
     $.each(options, function (ind, elem) {
         //función each de jQuery para recorrer las opciones del elemento options "ind es del indice del elemento"
