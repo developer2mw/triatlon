@@ -117,15 +117,13 @@ class IControlController extends Controller
         $infantil_11_12_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 122, 'M');
         $infantil_11_12_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 122, 'F');
         $infantil_13_15_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 123, 'M');
-        $infantil_13_15_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 123, 'F');
+        $infantil_13_15_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 123, 'F');        
         $juvenil_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 124,'M');
         $juvenil_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 124,'F');
         $libre_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 125,'M');
         $libre_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 125,'F');
         $master_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 126,'M');
-        $master_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 126,'F');
-        // $veteranos_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 113, 'M');
-        // $veteranos_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 113, 'F');
+        $master_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 126,'F');        
         $mi_primer_acuatlon_varonil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 127, 'M');
         $mi_primer_acuatlon_femenil = $this->ParticipantNumber->countTotalOfParticipantsForCategoryUsingGender($this->callEventController()->idevento, 127, 'F');                                
         
@@ -133,7 +131,7 @@ class IControlController extends Controller
             "juvenil_varonil" => $juvenil_varonil, "juvenil_femenil" => $juvenil_femenil,            
             "libre_varonil" => $libre_varonil,"libre_femenil" => $libre_femenil,
             "master_varonil" => $master_varonil, "master_femenil" => $master_femenil,
-            // "veteranos_varonil" => $veteranos_varonil, "veteranos_femenil" => $veteranos_femenil,
+            "mi_primer_acuatlon_varonil" => $mi_primer_acuatlon_varonil, "mi_primer_acuatlon_femenil" => $mi_primer_acuatlon_femenil,
             "mi_primer_acuatlon_varonil" => $mi_primer_acuatlon_varonil, "mi_primer_acuatlon_femenil" => $mi_primer_acuatlon_femenil,
             "infantil_5_6_varonil" => $infantil_5_6_varonil, "infantil_5_6_femenil" => $infantil_5_6_femenil,
             "infantil_7_8_varonil" => $infantil_7_8_varonil, "infantil_7_8_femenil" => $infantil_7_8_femenil,

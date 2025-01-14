@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="row items-push text-uppercase" style="text-align: center;">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="col-xs-12 col-sm-6">
                                     <div class="font-w700 text-gray-darker animated fadeIn">
                                         <small>INFANTIL 11-12 AÑOS FEMENIL / VARONIL</small>
@@ -135,8 +135,7 @@
                                         <span class="14C01M">{{$categorias['infantil_11_12_femenil']}}</span> <small>Mujeres</small> / <span class="14C01F">{{$categorias['infantil_11_12_varonil']}}</span> <small>Hombres</small>
                                     </label>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
+                            
                                 <div class="col-xs-12 col-sm-6">
                                     <div class="font-w700 text-gray-darker animated fadeIn">
                                         <small>INFANTIL 13-15 AÑOS FEMENIL / VARONIL</small>
@@ -148,37 +147,37 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <div class="col-xs-12 col-sm-4">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="font-w700 text-gray-darker animated fadeIn">
-                                    <small>JUVENIL MENOR FEMENIL / VARONIL</small>
+                                    <small>JUVENIL (16-17 años) FEMENIL / VARONIL</small>
                                 </div>
                                 <label class="h2 font-w300 text-primary animated flipInX" style="font-size: 16px;">
                                     <span class="14C01M">{{$categorias['juvenil_femenil']}}</span> <small>Mujeres</small> / <span class="14C01F">{{$categorias['juvenil_varonil']}}</span> <small>Hombres</small>
                                 </label>
                             </div>
-                            <div class="col-xs-12 col-sm-4">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="font-w700 text-gray-darker animated fadeIn">
                                     <small>LIBRE FEMENIL / VARONIL</small>
                                 </div>
                                 <label class="h2 font-w300 text-primary animated flipInX" style="font-size: 16px;">
                                     <span class="14C01M">{{$categorias['libre_femenil']}}</span> <small>Mujeres</small> / <span class="14C01F">{{$categorias['libre_varonil']}}</span> <small>Hombres</small>
                                 </label>
-                            </div>
-                            <div class="col-xs-12 col-sm-4">
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row items-push text-uppercase" style="text-align: center;">
+                        <div class="col-sm-12"> 
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="font-w700 text-gray-darker animated fadeIn">
-                                    <small>MASTER FEMENIL / VARONIL</small>
+                                    <small>MASTER (40 y más) FEMENIL / VARONIL</small>
                                 </div>
                                 <label class="h2 font-w300 text-primary animated flipInX" style="font-size: 16px;">
                                     <span class="14C01M">{{$categorias['master_femenil']}}</span> <small>Mujeres</small> / <span class="14C01F">{{$categorias['master_varonil']}}</span> <small>Hombres</small>
                                 </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row items-push text-uppercase" style="text-align: center;">
-                        <div class="col-sm-12">                            
+                            </div>                           
                             <div class="col-xs-12 col-sm-6">
                                 <div class="font-w700 text-gray-darker animated fadeIn">
-                                    <small>MI PRIMER ACUATLÓN FEMENIL / VARONIL</small>
+                                    <small>MI PRIMER ACUATLÓN (18 y más) FEMENIL / VARONIL</small>
                                 </div>
                                 <label class="h2 font-w300 text-primary animated flipInX" style="font-size: 16px;">
                                     <span class="14C01M">{{$categorias['mi_primer_acuatlon_femenil']}}</span> <small>Mujeres</small> / <span class="14C01F">{{$categorias['mi_primer_acuatlon_varonil']}}</span> <small>Hombres</small>
