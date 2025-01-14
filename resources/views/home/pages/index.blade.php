@@ -70,22 +70,22 @@
                                     <div class="row-100 third-row header-third">
                                         {{-- <div class="cell-100">DISTANCIA</div> --}}
                                         <div class="cell-100">
-                                            DEL 05 DE ENERO AL 21 DE ENERO DEL 2024 <br>
-                                            PREINSCRIPCIÓN
+                                            DEL 01 DE ENERO AL 24 DE ENERO DEL 2025 <br>
+                                            
                                         </div>
                                         <div class="cell-100">
-                                            DEL 22 DE ENERO AL 2 DE FEBRERO DEL 2024 <br>
-                                            INSCRIPCIÓN
+                                            DEL 25 DE ENERO AL 13 DE FEBRERO DEL 2025 <br>
+                                            
                                         </div>
                                         <div class="cell-100">
-                                            3 DE FEBRERO DEL 2024<br>
+                                            DEL 14 AL 15 DE FEBRERO<br>
                                             EXTEMPORÁNEO <br>
-                                            <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span>
+                                            <!-- <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span> -->
                                         </div>
                                     </div>
                                     <div class="row-100 third-row">
-                                        <div class="cell-100">$490.00</div>
-                                        <div class="cell-100">$580.00</div>
+                                        <div class="cell-100">$550.00</div>
+                                        <div class="cell-100">$600.00</div>
                                         <div class="cell-100">$650.00</div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@
                         <b>NOTA: </b>
                         <ul>
                             <li>
-                                La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2024. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
+                                La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2025. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
                             </li>
                             <li>
                                 Es indispensable que el padre o tutor firme la hoja de exoneración en caso de que el participante tenga menos de 18 años.
@@ -117,15 +117,16 @@
                         <ul>
                             <li>
                                 <span style="color: var(--fourth-color);">Fecha y Lugar de Entrega: </span><br>
-                                Sábado, 3 de febrero de 2024, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX.
+                                <!-- Sábado, 3 de febrero de 2025, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX. -->
                             </li>
                             <li>
                                 <span style="color: var(--fourth-color);">Junta Previa: </span><br>
-                                Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia.
+                                <!-- Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia. -->
                             </li>
                             <li>
                                 <span style="color: var(--fourth-color);">Documentación Necesaria: </span><br>
-                                INE original para la entrega del chip. En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia.
+                                INE original para la entrega del chip. 
+                                <!-- En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia. -->
                             </li>
                             <li>
                                 <span style="color: var(--fourth-color);">Firma de Hoja de Exoneración: </span><br>
@@ -183,7 +184,7 @@
             <h4 style="margin:0; margin-top: 1rem; margin-bottom: 1rem;">{{$titulo}}</h4>
             <div style="font-size: 16px;">Para hacer tu registro correctamente deberás llenar todos los campos. Si tienes alguna duda contáctanos al 951 243 4100</div>
             <div class="nota">-NOTA: Una vez registrado, te sugerimos hacer el pago en línea. Si generas formato de pago en OXXO tendrás 48 horas para realizar tu pago, de lo contrario tu registro expirará.</div>
-            <div class="nota">-NOTA: SOLO SE GARANTIZA LA TALLA DE PLAYERA A QUIEN SE INSCRIBA ANTES DEL 21 DE ENERO DE 2024</div>
+            <div class="nota">-NOTA: SOLO SE GARANTIZA LA TALLA DE PLAYERA A QUIEN SE INSCRIBA ANTES DEL 20 DE ENERO DE 2025</div>
             <diV id="response"></diV>
             <div class="fields">
                 <p>
@@ -395,17 +396,31 @@
                             <div class="cell-100">Carrera</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil 8 y menores</div>
+                            <div class="cell-100">Infantil (5-6 años)</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">200 mts</div>
+                            <div class="cell-100">50 mts</div>
+                            <div class="cell-100">200 mts</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Infantil (7-8 años)</div>
                             <div class="cell-100">FEMENIL Y VARONIL</div>
                             <div class="cell-100">300 mts</div>
                             <div class="cell-100">100 mts</div>
                             <div class="cell-100">300 mts</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil (9-12 años)</div>
+                            <div class="cell-100">Infantil (9-10 años)</div>
                             <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">1 KM </div>
+                            <div class="cell-100">500 mts </div>
                             <div class="cell-100">200 mts</div>
+                            <div class="cell-100">500 mts</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Infantil (11-12 años)</div>
+                            <div class="cell-100">FEMENIL Y VARONIL</div>
+                            <div class="cell-100">1 KM</div>
+                            <div class="cell-100">300 mts</div>
                             <div class="cell-100">500 mts</div>
                         </div>
                         <div class="row-100 custom-row">
@@ -413,7 +428,7 @@
                             <div class="cell-100">FEMENIL Y VARONIL</div>
                             <div class="cell-100">1 KM</div>
                             <div class="cell-100">400 mts</div>
-                            <div class="cell-100">1 KM</div>
+                            <div class="cell-100">1 km</div>
                         </div>
                         <div class="row-100 custom-row">
                             <div class="cell-100">Juvenil (16 a 17 años)</div>
@@ -423,24 +438,24 @@
                             <div class="cell-100">1.5 KM</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Libre (18 y mas)</div>
+                            <div class="cell-100">Libre (18-39 años)</div>
                             <div class="cell-100">FEMENIL Y VARONIL</div>
                             <div class="cell-100">2.5 KM</div>
                             <div class="cell-100">600 mts</div>
                             <div class="cell-100">1.5 KM</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Master 40 y mas</div>
+                            <div class="cell-100">Master 40 y más</div>
                             <div class="cell-100">FEMENIL Y VARONIL</div>
                             <div class="cell-100">2.5 KM</div>
                             <div class="cell-100">600 mts</div>
                             <div class="cell-100">1.5 KM</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Mi primer acuatlon</div>
+                            <div class="cell-100">Mi Primer Acuatlón (18 y más)</div>
                             <div class="cell-100">FEMENIL Y VARONIL</div>
                             <div class="cell-100">1 KM</div>
-                            <div class="cell-100">200 mts</div>
+                            <div class="cell-100">300 mts</div>
                             <div class="cell-100">500 mts</div>
                         </div>
                     </div>
@@ -504,22 +519,20 @@
                         <div class="row-100 third-row header-third">
                             {{-- <div class="cell-100">DISTANCIA</div> --}}
                             <div class="cell-100">
-                                DEL 05 DE ENERO AL 21 DE ENERO DEL 2024 <br>
-                                PREINSCRIPCIÓN
+                                DEL 01 DE ENERO AL 24 DE ENERO DEL 2025 <br>                                
                             </div>
                             <div class="cell-100">
-                                DEL 22 DE ENERO AL 2 DE FEBRERO DEL 2024 <br>
-                                INSCRIPCIÓN
+                                DEL 25 DE ENERO AL 13 DE FEBRERO DEL 2025 <br>
                             </div>
                             <div class="cell-100">
-                                3 DE FEBRERO DEL 2024<br>
+                                DEL 14 AL 15 DE FEBRERO 2025<br>
                                 EXTEMPORÁNEO <br>
-                                <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span>
+                                <!-- <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span> -->
                             </div>
                         </div>
                         <div class="row-100 third-row">
-                            <div class="cell-100">$490.00</div>
-                            <div class="cell-100">$580.00</div>
+                            <div class="cell-100">$550.00</div>
+                            <div class="cell-100">$600.00</div>
                             <div class="cell-100">$650.00</div>
                         </div>
                     </div>
@@ -529,7 +542,7 @@
             <b>NOTA: </b>
             <ul>
                 <li>
-                    La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2024. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
+                    La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2025. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
                 </li>
                 <li>
                     Es indispensable que el padre o tutor firme la hoja de exoneración en caso de que el participante tenga menos de 18 años.
@@ -551,15 +564,16 @@
             <ul>
                 <li>
                     <span style="color: var(--fourth-color);">Fecha y Lugar de Entrega: </span><br>
-                    Sábado, 3 de febrero de 2024, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX.
+                    <!-- Sábado, 3 de febrero de 2025, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX. -->
                 </li>
                 <li>
                     <span style="color: var(--fourth-color);">Junta Previa: </span><br>
-                    Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia.
+                    <!-- Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia. -->
                 </li>
                 <li>
                     <span style="color: var(--fourth-color);">Documentación Necesaria: </span><br>
-                    INE original para la entrega del chip. En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia.
+                    INE original para la entrega del chip. 
+                    <!-- En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia. -->
                 </li>
                 <li>
                     <span style="color: var(--fourth-color);">Firma de Hoja de Exoneración: </span><br>
@@ -609,7 +623,7 @@
             <h2>REGLAMENTO</h2>
             <br>
             <span>
-                El presente reglamento tiene como objetivo establecer las normas y directrices que regirán el desarrollo del Acuatlón Deportivo Oaxaca 2024. Todos los participantes están obligados a conocer y cumplir con estas disposiciones para garantizar un evento seguro y justo. Cualquier violación a este reglamento puede resultar en descalificación.
+                El presente reglamento tiene como objetivo establecer las normas y directrices que regirán el desarrollo del Acuatlón Deportivo Oaxaca 2025. Todos los participantes están obligados a conocer y cumplir con estas disposiciones para garantizar un evento seguro y justo. Cualquier violación a este reglamento puede resultar en descalificación.
             </span>
             <br>
             <b>DISPOSICIONES GENERALES: </b><br>
@@ -631,7 +645,7 @@
             <br>
             <b>EDAD Y DOCUMENTACIÓN: </b><br>
             <ul>
-                <li>La edad válida para cada categoría es la que el participante tenga al 31 de diciembre de 2024.</li>
+                <li>La edad válida para cada categoría es la que el participante tenga al 31 de diciembre de 2025.</li>
                 <li>Se requerirá la presentación de acta de nacimiento, credencial escolar o CURP para verificar la edad.</li>
                 <li>En caso de participantes menores de 18 años, es obligatoria la firma del padre o tutor en la hoja de exoneración.</li>
             </ul>
@@ -664,7 +678,7 @@
             <br>
             <b>INICIO DE LA COMPETENCIA: </b><br>
             <ul>
-                <li>La competencia comenzará a las 07:00 a.m. del domingo, 4 de febrero de 2024.</li>
+                <li>La competencia comenzará a las 07:00 a.m. del domingo, 16 de febrero de 2025.</li>
                 <li>Se seguirán las instrucciones del personal de organización para el inicio y durante la competencia.</li>
             </ul>
             <br>
@@ -701,7 +715,7 @@
             </ul>
             <br>
             <span>
-                Al participar en el Acuatlón Deportivo Oaxaca 2024, todos los competidores aceptan y se comprometen a cumplir con este reglamento. 
+                Al participar en el Acuatlón Deportivo Oaxaca 2025, todos los competidores aceptan y se comprometen a cumplir con este reglamento. 
                 El desconocimiento de las normas no exime de su cumplimiento. ¡Les deseamos a todos los participantes una competencia exitosa y llena de logros!
             </span>
             <br>

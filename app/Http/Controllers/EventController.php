@@ -37,14 +37,14 @@ class EventController extends Controller
     public $secondPhone = "(951) 243 41 00";
     public $mailImage = "";
     public $backgroundImage = "";
-    public $sede = "Parque hundido de Chahué  Santa Cruz Huatulco";
+    public $sede = "Club Deportivo Oaxaca";
     public $comision = 80;
-    public $salida = "Parque hundido de Chahué";
-    public $meta = "Parque hundido de Chahué";
+    public $salida = "Club Deportivo Oaxaca";
+    public $meta = "Club Deportivo Oaxaca";
     public $distancias = "pendientes";
-    public $fecha = "Domingo, 12 de enero de 2025";
-    public $cupo = "300 competidores.";
-    public $horario_arranque = "06:30 a.m.";
+    public $fecha = "Domingo, 16 de febrero de 2025";
+    public $cupo = "150 competidores.";
+    public $horario_arranque = "07:00 a.m.";
     public $estado;
     private $api_url_discounts = "";
     private $conekta_public_key = "";
@@ -59,7 +59,7 @@ class EventController extends Controller
     private $ParticipantDiscount;
     private $Paid;
     private $EventCategory;
-    private $finished_racing = "2025-01-13"; //EL SISTEMA DEBE BLOQUEARSE EL DIA 13 DE FEBRERO A LAS 11:59 PM PARA YA NO RECIBIR MAS INSCRIPCIONES
+    private $finished_racing = "2025-02-13"; //EL SISTEMA DEBE BLOQUEARSE EL DIA 13 DE FEBRERO A LAS 11:59 PM PARA YA NO RECIBIR MAS INSCRIPCIONES
     private $EventCategoryDistance;
     public $ParticipantFaculty;
     public $ParticipantTShirt;
