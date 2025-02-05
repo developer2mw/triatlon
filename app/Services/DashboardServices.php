@@ -194,27 +194,31 @@ class DashboardServices {
         $categoryResult = [
             "F" => [
                 "<option value='0'>NO TIENE CATEGORÍA</option>",
-                "<option value='119'>Infantil 5-6 años</option>",
-                "<option value='120'>Infantil 7-8 años</option>",
-                "<option value='121'>Infantil 9-10 años</option>",
-                "<option value='122'>Infantil 11-12 años</option>",                
-                "<option value='123'>Infantil 13-15</option>",
-                "<option value='124'>Juvenil Menor (16-17 años)</option>",
-                "<option value='125'>Libre (18-39 años)</option>",
-                "<option value='126'>Master (40 y más)</option>",
-                "<option value='127'>Mi primer acuatlón (18 y más)</option>",
+                "<option value='128'>Infantil 5-6 años</option>", // Valor 128 para infantil 5-6
+                "<option value='129'>Infantil 7-8 años</option>", // Valor 129 para infantil 7-8
+                "<option value='130'>Infantil 9-10 años</option>", // Valor 130 para infantil 9-10
+                "<option value='131'>Infantil 11-12 años</option>", // Valor 131 para infantil 11-12
+                "<option value='132'>Infantil 13-15 años</option>", // Valor 132 para infantil 13-15
+                "<option value='133'>Juvenil Menor (16-17 años)</option>", // Valor 133 para juvenil 16-17
+                "<option value='134'>Libre (18-39 años)</option>", // Valor 134 para libre 18-39
+                "<option value='135'>Master (40-49 años)</option>", // Valor 135 para master 40-49
+                "<option value='136'>Veteranos (50 y más)</option>", // Valor 136 para veteranos 50+
+                "<option value='137'>Relevos</option>", // Valor 137 para relevos
+                "<option value='138'>Novatos (18 y más)</option>", // Valor 138 para novatos 18+
             ],
             "M" => [
                 "<option value='0'>NO TIENE CATEGORÍA</option>",
-                "<option value='119'>Infantil 5-6 años</option>",
-                "<option value='120'>Infantil 7-8 años</option>",
-                "<option value='121'>Infantil 9-10 años</option>",
-                "<option value='122'>Infantil 11-12 años</option>",                
-                "<option value='123'>Infantil 13-15</option>",
-                "<option value='124'>Juvenil Menor (16-17 años)</option>",
-                "<option value='125'>Libre (18-39 años)</option>",
-                "<option value='126'>Master (40 y más)</option>",
-                "<option value='127'>Mi primer acuatlón (18 y más)</option>",
+                "<option value='128'>Infantil 5-6 años</option>", // Valor 128 para infantil 5-6
+                "<option value='129'>Infantil 7-8 años</option>", // Valor 129 para infantil 7-8
+                "<option value='130'>Infantil 9-10 años</option>", // Valor 130 para infantil 9-10
+                "<option value='131'>Infantil 11-12 años</option>", // Valor 131 para infantil 11-12
+                "<option value='132'>Infantil 13-15 años</option>", // Valor 132 para infantil 13-15
+                "<option value='133'>Juvenil Menor (16-17 años)</option>", // Valor 133 para juvenil 16-17
+                "<option value='134'>Libre (18-39 años)</option>", // Valor 134 para libre 18-39
+                "<option value='135'>Master (40-49 años)</option>", // Valor 135 para master 40-49
+                "<option value='136'>Veteranos (50 y más)</option>", // Valor 136 para veteranos 50+
+                "<option value='137'>Relevos</option>", // Valor 137 para relevos
+                "<option value='138'>Novatos (18 y más)</option>", // Valor 138 para novatos 18+
             ]
         ];
 

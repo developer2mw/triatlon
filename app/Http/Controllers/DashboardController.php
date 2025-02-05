@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
-    public $tallaM = array("XS" => 15, "S" => 15, "M" => 15, "L" => 5, "XL" => 5);
-    public $tallaF = array('S' => 10, 'M' => 15, 'L' => 10);
-    public $tallaInfantil = array('6' => 5,'8' => 5,'12' => 5, '14' => 10);
+    public $tallaM = array("XS" => 15, "S" => 20, "M" => 30, "L" => 10, "XL" => 5);
+    public $tallaF = array("S" => 10, "M" => 15, "L" => 5);
+    public $tallaInfantil = array("6" => 10, "8" => 10, "10" => 10,"12" => 15, "14" => 15);
     private $dashboardServices;
     private $eventServices;
     private $Participant;
@@ -561,17 +561,17 @@ class DashboardController extends Controller
      * @param string $gender
      */
     public function availableShirtSizes(Request $request)
-    {
-        $gender = isset($request->gender) ? $request->gender : "I";
+{
+    $gender = isset($request->gender) ? $request->gender : "I";
 
-        if($gender === "M")
-           return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaM, $gender, $this->callEventController()->idevento));
-        else if($gender === "F")
-           return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaF, $gender, $this->callEventController()->idevento));
-        else 
-           return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaInfantil,"", $this->callEventController()->idevento));
-        
+    if ($gender === "M") {
+        return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaM, $gender, $this->callEventController()->idevento));
+    } else if ($gender === "F") {
+        return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaF, $gender, $this->callEventController()->idevento));
+    } else {
+        return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaInfantil, "", $this->callEventController()->idevento));
     }
+}
     public function sendMail(Request $request){
         $image = asset("img/correo.jpg");
         $logs_folder = storage_path().'/logs';
@@ -579,7 +579,7 @@ class DashboardController extends Controller
         try {
             //Se arman los datos para mandar por medio del correo electronico
             $content = [
-                'titulo' => "ACUATLÓN 2025",
+                'titulo' => "TRIBURONES 2025",
                 'image_url' => $image,
                 'participante' => $request->nombre,
                 'numero' => $request->ncorredor,
@@ -590,7 +590,7 @@ class DashboardController extends Controller
             $mail = new Mail(); // Se instancia la clase Mail
             //Se pasan como parametros: el destinatario del correo electronico, el contenido y un mensaje que se usa como un asunto
             //ESTA FORMA DE MANDAR LOS EMAILS SE LOGRA POR MEDIO DE USAR LAS FUNCIONES DE ARTISAN "php artisan make: mail 'namex'"
-            $mail::to($request->email)->send(new \App\Mail\HBSportMail($content, "Inscripción a ACUATLÓN 2025")); 
+            $mail::to($request->email)->send(new \App\Mail\HBSportMail($content, "Inscripción a Triburones2025")); 
 
             return response()->json(["status" => "true", "response" =>"Correo enviado"]);
 

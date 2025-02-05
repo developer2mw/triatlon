@@ -15,19 +15,19 @@ class CategorySeeder extends Seeder
     public function run()
     {
         $categories = [
-            "LIBRE", 
-            "MASTER", 
-            "VETERANOS", 
-            "Estudiantes LED", 
-            "Maestría LED",
-            "Infantil 8 y menores",
-            "Infantil (9-12 años)",
-            "Infantil (13-15 años)",
-            "Juvenil (16 a 17 años)",
-            "Libre (18 y mas)",
-            "Master 40 y mas",
-            "Mi primer acuatlón"
+            "Infantil (5-6 años)",
+            "Infantil (7-8 años)",
+            "Infantil (9-10 años)",
+            "Infantil (11-12 años)",
+            "Super Sprint Inf (13-15 años)",
+            "Super Sprint Juv (16-17 años)",
+            "Libre (18-39 años)",
+            "Master (40-49 años)",
+            "Veteranos (50 y más)",
+            "Relevos",
+            "Novatos (18 y más)"
         ];
+        
 
         foreach ($categories as $category) {
             DB::table("category")->insert([

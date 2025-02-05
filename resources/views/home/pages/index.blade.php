@@ -1,17 +1,22 @@
 @extends('home.layouts.default')
 @section('content')
 <style>
-    .styled-message {    
-        text-align: center !important;    
+    .styled-message {
+        text-align: center !important;
         font-size: 22px !important;
         color: #111731 !important;
-        padding: 10px;        
+        padding: 10px;
     }
-
 </style>
 <div id="preloader" class="fullscreen loaded" style="display: none;">
-    <div class="logo"><img src="https://hbsports.com.mx/images/header/header-1/logo-hardbeat.png" ></div>
-    <div class="lds-ring lds-ring-index circular"><div></div><div></div><div></div><div></div><span style="color:white;">Espere...</span></div></div>
+    <div class="logo"><img src="https://hbsports.com.mx/images/header/header-1/logo-hardbeat.png"></div>
+    <div class="lds-ring lds-ring-index circular">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div><span style="color:white;">Espere...</span>
+    </div>
+</div>
 
 <header class="header">
     <div class="header-inner ">
@@ -68,25 +73,28 @@
                                         <div class="cell-100 header-table">COSTOS POR INSCRIPCIÓN</div>
                                     </div>
                                     <div class="row-100 third-row header-third">
-                                        {{-- <div class="cell-100">DISTANCIA</div> --}}
+                                        <div class="cell-100">CATEGORÍA</div>
                                         <div class="cell-100">
-                                            DEL 01 DE ENERO AL 24 DE ENERO DEL 2025 <br>
-                                            
+                                            HASTA EL 26 DE FEBRERO<br>
                                         </div>
                                         <div class="cell-100">
-                                            DEL 25 DE ENERO AL 13 DE FEBRERO DEL 2025 <br>
-                                            
-                                        </div>
-                                        <div class="cell-100">
-                                            DEL 14 AL 15 DE FEBRERO<br>
-                                            EXTEMPORÁNEO <br>
-                                            <!-- <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span> -->
+                                            *EXTEMPORÁNEO<br>
                                         </div>
                                     </div>
                                     <div class="row-100 third-row">
-                                        <div class="cell-100">$550.00</div>
-                                        <div class="cell-100">$600.00</div>
-                                        <div class="cell-100">$650.00</div>
+                                        <div class="cell-100">INFANTIL</div>
+                                        <div class="cell-100">$990.00</div>
+                                        <div class="cell-100">$1,150.00</div>
+                                    </div>
+                                    <div class="row-100 third-row">
+                                        <div class="cell-100">JUVENIL NOVATOS, LIBRE, MASTER Y VETERANOS</div>
+                                        <div class="cell-100">$1,150.00</div>
+                                        <div class="cell-100">$1,350.00</div>
+                                    </div>
+                                    <div class="row-100 third-row">
+                                        <div class="cell-100">RELEVOS</div>
+                                        <div class="cell-100">$1,490.00</div>
+                                        <div class="cell-100">$1,650.00</div>
                                     </div>
                                 </div>
                             </div>
@@ -95,14 +103,16 @@
                         <b>NOTA: </b>
                         <ul>
                             <li>
-                                La edad para tomarse en cuenta es la que el participante tenga al 31 de diciembre de 2025. Para ello, deberán presentar acta de nacimiento o credencial escolar o CURP para comprobar su edad. 
-                            </li>
+                                *EXTEMPORÁNEO UNICAMENTE EL DÍA DE LA ENTREGA DE PAQUETES
+                                **NO HABRÁ INSCRIPCIONES NI ENTREGA DE KITS EL DÍA DEL EVENTO
+                                ***DESPUES DEL <span style="color: red; background-color: white; padding: 2px 5px;">21</span> DE FEBRERO, TALLAS SUJETAS A DISPONIBILIDAD.
+                            </li><br>
                             <li>
                                 Es indispensable que el padre o tutor firme la hoja de exoneración en caso de que el participante tenga menos de 18 años.
                             </li>
                         </ul>
                         <br>
-                        <b>DERECHOS DEL COMPETIDOR</b><br>
+                        <!-- <b>DERECHOS DEL COMPETIDOR</b><br>
                         <ul>
                             <li>Playera.</li>
                             <li>Medalla de finalista.</li>
@@ -111,46 +121,36 @@
                             <li>Servicio médico en ruta y recuperación.</li>
                             <li>Chip de cronometraje electrónico.</li>
                             <li>Seguridad víal.</li>
-                        </ul>
+                        </ul> -->
                         <br>
                         <b>ENTREGA DEL KIT DE CORREDOR</b>
                         <ul>
                             <li>
                                 <span style="color: var(--fourth-color);">Fecha y Lugar de Entrega: </span><br>
-                                <!-- Sábado, 3 de febrero de 2025, de 3:00 pm a 7:00 pm, en el Club Deportivo Oaxaca, Carretera Internacional Kilómetro 6.5, San Francisco Tutla, Oaxaca de Juárez, OAX. -->
-                            </li>
-                            <li>
-                                <span style="color: var(--fourth-color);">Junta Previa: </span><br>
-                                <!-- Obligatoria en el Club Deportivo Oaxaca a las 7:00 pm del sábado 3 de febrero de 2023, para conocer la ruta y el reglamento de competencia. -->
+                                Por definir
                             </li>
                             <li>
                                 <span style="color: var(--fourth-color);">Documentación Necesaria: </span><br>
-                                INE original para la entrega del chip. 
-                                <!-- En caso de no contar con este documento, se puede optar por realizar un depósito de $500 pesos, reembolsables al entregar el chip después de la competencia. -->
-                            </li>
-                            <li>
-                                <span style="color: var(--fourth-color);">Firma de Hoja de Exoneración: </span><br>
-                                Se realizará durante la entrega de kits.
-                            </li>
-                            <li>
-                                <span style="color: var(--fourth-color);">Documentación de Inscripción: </span><br>
-                                Presentar el documento proporcionado en el momento de la inscripción.
+                                Importante llevar INE y la hoja de exoneración que se enviara por correo.
                             </li>
                             <li>
                                 <span style="color: var(--fourth-color);">Condiciones de entrega:</span><br>
-                                Los participantes que no recojan su kit en el lugar, día y hora indicado, perderán todo derecho derivado de su inscripción.
+                                Para realizar la entrega del kit es indispensable traer consigo el documento que se le proporcione en el momento en el que realizó su inscripción.
+                            </li>
+                            <li>
+                                <span style="color: var(--fourth-color);">Aviso importante:</span><br>
+                                Los participantes que no recojan su kit en el lugar, día y horario indicado, perderán todo derecho derivado de su inscripción. No hay entregas extemporáneas.
                             </li>
                             <li>
                                 <span style="color: var(--fourth-color);">Derechos de Uso de Nombre e Imagen:</span><br>
-                                Todo participante inscrito cede al comité organizador el derecho de utilizar su nombre e imagen en cualquier promoción relacionada con el evento.
-                            </li>
-                            <li>
-                                <span style="color: var(--fourth-color);">Condiciones Únicas.</span><br>
-                                Estas bases son las únicas y deben respetarse en todo momento. Cualquier situación no contemplada será resuelta por el comité organizador.
+                                Todo participante inscrito cede al comité organizador el derecho de utilizar su nombre e imagen en cualquier promoción motivo del evento.
                             </li>
                         </ul>
+
+
+
                         <br>
-                        <b>SERVICIOS PARA EL COMPETIDOR</b>
+                        <!-- <b>SERVICIOS PARA EL COMPETIDOR</b>
                         <ul>
                             <li>
                                 <span style="color: var(--fourth-color);">Abastecimiento</span><br>
@@ -165,6 +165,28 @@
                                 El estado de salud de los competidores es responsabilidad de cada corredor y NO del comité organizador. Se ofrecerá asistencia médica en primeros auxilios en caso de que se presente cualquier emergencia. <br>
                                 Si padeces de alguna enfermedad es importante que debamos saber, y/o si eres alérgico algún medicamento, por favor anótalo en la forma de inscripción.
                             </li>
+                        </ul> -->
+                        <b>DERECHOS DEL COMPETIDOR</b><br>
+                        <ul>
+                            <!-- <li>Playera conmemorativa del evento.</li>
+                            <li>Medalla de finalista.</li>
+                            <li>Gorra de natación.</li>
+                            <li>Morral.</li>
+                            <li>Hidratación de ruta.</li>
+                            <li>Zona de recuperación.</li>
+                            <li>Servicio médico en ruta y recuperación.</li>
+                            <li>Seguridad vial.</li>
+                            <li>Chip para tiempo electrónico (Cronometraje electrónico).</li> -->
+                            <li>• Playera conmemorativa del evento.</li>
+                            <li>• Medalla de finalista.</li>
+                            <li>• Gorra de natación.</li>
+                            <li>• Morral.</li>
+                            <li>• Hidratación en ruta.</li>
+                            <li>• Zona de recuperación.</li>
+                            <li>• Servicio médico en ruta y recuperación.</li>
+                            <li>• Seguridad vial.</li>
+                            <li>• Chip para cronometraje electrónico.</li>
+                            <li>• Certificado de competidor virtual.</li>
                         </ul>
                     </div>
                 </div>
@@ -175,7 +197,7 @@
 
 <section class="main">
     <div class="main-inner">
-       
+
         <form action="#" method="post" class="registro-form tab-form-led" id="registro-form">
             <!-- @csrf Una medida de seguridad cintra ataques maliciosos -->
             @csrf
@@ -184,7 +206,7 @@
             <h4 style="margin:0; margin-top: 1rem; margin-bottom: 1rem;">{{$titulo}}</h4>
             <div style="font-size: 16px;">Para hacer tu registro correctamente deberás llenar todos los campos. Si tienes alguna duda contáctanos al 951 243 4100</div>
             <div class="nota">-NOTA: Una vez registrado, te sugerimos hacer el pago en línea. Si generas formato de pago en OXXO tendrás 48 horas para realizar tu pago, de lo contrario tu registro expirará.</div>
-            <div class="nota">-NOTA: SOLO SE GARANTIZA LA TALLA DE PLAYERA A QUIEN SE INSCRIBA ANTES DEL 20 DE ENERO DE 2025</div>
+            <div class="nota">-NOTA: SOLO SE GARANTIZA LA TALLA DE PLAYERA A QUIEN SE INSCRIBA ANTES DEL 21 DE FEBRERO DE 2025</div>
             <diV id="response"></diV>
             <div class="fields">
                 <p>
@@ -243,15 +265,15 @@
                     </div>
                     <div class="input-group input-group-icon">
                         <select class="select-home" name="estado" id="estado" style="width: 100%;" required placeholder="Estado">
-                            @foreach ($estados as $estado) 
-                                <option value="{{$estado->id}}">{{$estado->state}}</option>
+                            @foreach ($estados as $estado)
+                            <option value="{{$estado->id}}">{{$estado->state}}</option>
                             @endforeach
                         </select>
                         <div class="input-icon"><i class="fa-solid fa-globe"></i></div>
                     </div>
                     <div class="input-group input-group-icon">
                         <select class="select-home" name="sexo" id="sexo" style="width: 100%;" required placeholder="Sexo">
-                            <option disabled selected >Seleccione una opción</option>
+                            <option disabled selected>Seleccione una opción</option>
                             <option value="M">-Masculino</option>
                             <option value="F">-Femenino</option>
                         </select>
@@ -268,7 +290,7 @@
                             <option value="" selected disabled>Seleccione una categoria</option>
                         </select>
                         <div class="input-icon"><i class="fa-solid fa-male"></i></div>
-                    </div> 
+                    </div>
                     {{-- <div class="input-group">
                         <select class="select-home" name="modalidad" id="modalidad" required style="width: 100%;" placeholder="Modalidad">
                             <option value=""></option>
@@ -291,12 +313,12 @@
                 </p>
 
                 <div class="input-group input-group-icon">
-                        <input type="text" name="fname" id="fname" placeholder="Nombre del familiar" class="input-home" required>
-                        <div class="input-icon"><i class="fa-solid fa-person-circle-check"></i></div>
+                    <input type="text" name="fname" id="fname" placeholder="Nombre del familiar" class="input-home" required>
+                    <div class="input-icon"><i class="fa-solid fa-person-circle-check"></i></div>
                 </div>
                 <div class="input-group input-group-icon">
-                        <input type="tel" name="fphone" id="fphone" placeholder="Teléfono" class="input-home" pattern="^\(\d{3}\) \d{3} \d{2} \d{2}$" required minlength="5">
-                        <div class="input-icon"><i class="fa-solid fa-mobile-retro"></i></i></div>
+                    <input type="tel" name="fphone" id="fphone" placeholder="Teléfono" class="input-home" pattern="^\(\d{3}\) \d{3} \d{2} \d{2}$" required minlength="5">
+                    <div class="input-icon"><i class="fa-solid fa-mobile-retro"></i></i></div>
                 </div>
                 <div class="input-group input-group-icon">
                     <input type="text" name="codigo" id="codigo" class="input-home" placeholder="Código de descuento">
@@ -327,40 +349,40 @@
             </a>
         </li>
         <li>
-           <a href="#" id="categoriaLink">
+            <a href="#" id="categoriaLink">
                 CATEGORÍAS
             </a>
         </li>
         <li>
             <a href="#" id="premiacionLink">
-               PREMIACIÓN
+                PREMIACIÓN
             </a>
         </li>
         <li>
             <a href="#" id="gallery-link">
-               PLAYERA
+                PLAYERA
             </a>
             <div class="image-popup-fit-width2" style="display: none;">
-               <a href="{{asset('img/playera.jpg')}}"></a>
+                <a href="{{asset('img/playera.jpg')}}"></a>
             </div>
         </li>
         <li>
             <a href="#" id="gallery-link1">
-              MEDALLA
+                MEDALLA
             </a>
             <div class="image-popup-fit-width2" style="display: none;">
-              <a href="{{asset('img/medalla.jpg')}}"></a>
+                <a href="{{asset('img/medalla.jpg')}}"></a>
             </div>
         </li>
         <li>
             <a href="#" id="gallery-link2">
-                    RUTA
+                RUTA
             </a>
             <div class="image-popup-fit-width2" style="display: none;">
-                    <a href="{{asset('img/ruta.jpg')}}"></a>
+                <a href="{{asset('img/ruta.jpg')}}"></a>
             </div>
         </li>
-   </ul>
+    </ul>
     <div class="more-listaC-btn-wrap">
         <button id="more-listaC-btn" class="more-listaC-btn">
             <span aria-hidden="true" class="li_world"></span> &nbsp; CONVOCATORÍA
@@ -379,7 +401,7 @@
                 <div class="wrap-table100">
                     <div class="table-100" style="--limit-column:5;" >
                         <div class="row-100 custom-row header-100">
-                            <div class="cell-100 header-table">FEMENIL - VARONIL</div>
+                            <div class="cell-100 header-table" >VARONIL Y FEMENIL</div>
                         </div>
                         <div class="row-100 custom-row custom-header">
                             <div class="cell-100">CATEGORIA</div>
@@ -391,72 +413,86 @@
                         <div class="row-100 custom-row custom-header">
                             <div class="cell-100"></div>
                             <div class="cell-100"></div>
-                            <div class="cell-100">Carrera</div>
                             <div class="cell-100">Natación</div>
+                            <div class="cell-100">Ciclismo</div>
                             <div class="cell-100">Carrera</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil (5-6 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">200 mts</div>
-                            <div class="cell-100">50 mts</div>
-                            <div class="cell-100">200 mts</div>
+                            <div class="cell-100">Infantil<br>(5-6 años)</div>
+                            <div class="cell-100">Varonil<br>Femenil</div>
+                            <div class="cell-100">25 m</div>
+                            <div class="cell-100">1 km</div>
+                            <div class="cell-100">200 m</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil (7-8 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">300 mts</div>
-                            <div class="cell-100">100 mts</div>
-                            <div class="cell-100">300 mts</div>
+                            <div class="cell-100">Infantil<br>(7-8 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">50 m</div>
+                            <div class="cell-100">2 km</div>
+                            <div class="cell-100">400 m</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil (9-10 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">500 mts </div>
-                            <div class="cell-100">200 mts</div>
-                            <div class="cell-100">500 mts</div>
+                            <div class="cell-100">Infantil<br>(9-10 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">100 m</div>
+                            <div class="cell-100">3 km</div>
+                            <div class="cell-100">750 m</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil (11-12 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">1 KM</div>
-                            <div class="cell-100">300 mts</div>
-                            <div class="cell-100">500 mts</div>
-                        </div>
-                        <div class="row-100 custom-row">
-                            <div class="cell-100">Infantil (13-15 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">1 KM</div>
-                            <div class="cell-100">400 mts</div>
+                            <div class="cell-100">Infantil<br>(11-12 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">200 m</div>
+                            <div class="cell-100">5 km</div>
                             <div class="cell-100">1 km</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Juvenil (16 a 17 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">2.5 KM</div>
-                            <div class="cell-100">600 mts</div>
-                            <div class="cell-100">1.5 KM</div>
+                            <div class="cell-100">Super Sprint Inf<br>(13-15 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">300 m</div>
+                            <div class="cell-100">5 km</div>
+                            <div class="cell-100">1 km</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Libre (18-39 años)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">2.5 KM</div>
-                            <div class="cell-100">600 mts</div>
-                            <div class="cell-100">1.5 KM</div>
+                            <div class="cell-100">Super Sprint Juv<br>(16 a 17 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">300 m</div>
+                            <div class="cell-100">5 km</div>
+                            <div class="cell-100">1 km</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Master 40 y más</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">2.5 KM</div>
-                            <div class="cell-100">600 mts</div>
-                            <div class="cell-100">1.5 KM</div>
+                            <div class="cell-100">Libre<br>(18-39 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">750 m</div>
+                            <div class="cell-100">20 km</div>
+                            <div class="cell-100">5 km</div>
                         </div>
                         <div class="row-100 custom-row">
-                            <div class="cell-100">Mi Primer Acuatlón (18 y más)</div>
-                            <div class="cell-100">FEMENIL Y VARONIL</div>
-                            <div class="cell-100">1 KM</div>
-                            <div class="cell-100">300 mts</div>
-                            <div class="cell-100">500 mts</div>
+                            <div class="cell-100">Master<br>(40-49 años)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">750 m</div>
+                            <div class="cell-100">20 km</div>
+                            <div class="cell-100">5 km</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Veteranos<br>(50 y más)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">750 m</div>
+                            <div class="cell-100">20 km</div>
+                            <div class="cell-100">5 km</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Relevos</div>
+                            <div class="cell-100">Mixtos</div>
+                            <div class="cell-100">750 m</div>
+                            <div class="cell-100">20 km</div>
+                            <div class="cell-100">5 km</div>
+                        </div>
+                        <div class="row-100 custom-row">
+                            <div class="cell-100">Novatos<br>(18 y más)</div>
+                            <div class="cell-100">Varonil <br>Femenil</div>
+                            <div class="cell-100">300 m</div>
+                            <div class="cell-100">5 km</div>
+                            <div class="cell-100">1 km</div>
                         </div>
                     </div>
                 </div>
@@ -510,34 +546,39 @@
             <br>
             <b>NOTA:</b><br>
             <h3>COSTOS POR INSCRIPCIÓN</h3>
-            <div class="container-table100">
-                <div class="wrap-table100">
-                    <div class="table-100">
-                        <div class="row-100 third-row header-100">
-                            <div class="cell-100 header-table">COSTOS POR INSCRIPCIÓN</div>
-                        </div>
-                        <div class="row-100 third-row header-third">
-                            {{-- <div class="cell-100">DISTANCIA</div> --}}
-                            <div class="cell-100">
-                                DEL 01 DE ENERO AL 24 DE ENERO DEL 2025 <br>                                
-                            </div>
-                            <div class="cell-100">
-                                DEL 25 DE ENERO AL 13 DE FEBRERO DEL 2025 <br>
-                            </div>
-                            <div class="cell-100">
-                                DEL 14 AL 15 DE FEBRERO 2025<br>
-                                EXTEMPORÁNEO <br>
-                                <!-- <span style="color:#dd1313">(SUJETO A DISPONIBILIDAD)</span> -->
-                            </div>
-                        </div>
-                        <div class="row-100 third-row">
-                            <div class="cell-100">$550.00</div>
-                            <div class="cell-100">$600.00</div>
-                            <div class="cell-100">$650.00</div>
-                        </div>
-                    </div>
+<div class="container-table100">
+    <div class="wrap-table100">
+        <div class="table-100">
+            <div class="row-100 third-row header-100">
+                <div class="cell-100 header-table">COSTOS POR INSCRIPCIÓN</div>
+            </div>
+            <div class="row-100 third-row header-third">
+                <div class="cell-100">CATEGORÍA</div>
+                <div class="cell-100">
+                    HASTA EL 26 DE FEBRERO<br>
+                </div>
+                <div class="cell-100">
+                    *EXTEMPORÁNEO<br>
                 </div>
             </div>
+            <div class="row-100 third-row">
+                <div class="cell-100">INFANTIL</div>
+                <div class="cell-100">$990.00</div>
+                <div class="cell-100">$1,150.00</div>
+            </div>
+            <div class="row-100 third-row">
+                <div class="cell-100">JUVENIL NOVATOS, LIBRE, MASTER Y VETERANOS</div>
+                <div class="cell-100">$1,150.00</div>
+                <div class="cell-100">$1,350.00</div>
+            </div>
+            <div class="row-100 third-row">
+                <div class="cell-100">RELEVOS</div>
+                <div class="cell-100">$1,490.00</div>
+                <div class="cell-100">$1,650.00</div>
+            </div>
+        </div>
+    </div>
+</div>
             <br>
             <b>NOTA: </b>
             <ul>
@@ -620,108 +661,109 @@
 <script id="reglamento-plantilla" type="text/x-handlebars-template">
     <div class="subtitle">
         <div class="col100" style="margin-top: 20px">
-            <h2>REGLAMENTO</h2>
-            <br>
-            <span>
-                El presente reglamento tiene como objetivo establecer las normas y directrices que regirán el desarrollo del Acuatlón Deportivo Oaxaca 2025. Todos los participantes están obligados a conocer y cumplir con estas disposiciones para garantizar un evento seguro y justo. Cualquier violación a este reglamento puede resultar en descalificación.
-            </span>
-            <br>
-            <b>DISPOSICIONES GENERALES: </b><br>
-            <ul>
-                <li>
-                    La participación en el Acuatlón implica la aceptación de las reglas y regulaciones establecidas por el comité organizador.
-                </li>
-                <li>
-                    El reglamento tiene como objetivo garantizar la seguridad y equidad de la competencia.
-                </li>
-            </ul>
-            <br>
-            <b>INSCRIPCIONES: </b><br>
-            <ul>
-                <li>La inscripción es personal e intransferible. Cualquier intento de transferencia resultará en descalificación.</li>
-                <li>Los participantes deben proporcionar información veraz y completa durante el proceso de inscripción.</li>
-                <li>Solo se permitirá la participación a aquellos que hayan completado el proceso de inscripción de acuerdo con los plazos establecidos.</li>
-            </ul>
-            <br>
-            <b>EDAD Y DOCUMENTACIÓN: </b><br>
-            <ul>
-                <li>La edad válida para cada categoría es la que el participante tenga al 31 de diciembre de 2025.</li>
-                <li>Se requerirá la presentación de acta de nacimiento, credencial escolar o CURP para verificar la edad.</li>
-                <li>En caso de participantes menores de 18 años, es obligatoria la firma del padre o tutor en la hoja de exoneración.</li>
-            </ul>
-            <br>
-            <b>SEGURIDAD Y EQUIPO: </b><br>
-            <ul>
-                <li>Todos los participantes deben usar el equipo obligatorio durante toda la competencia.</li>
-                <li>EN LA ETAPA DE CARRERA EL TORSO DEBE IR CUBIERTO, EL NUMERO DE COMPETENCIA ASIGNADO DEBE IR EN LA PARTE FRONTAL DEL TORSO.</li>
-                <li>EL USO DE GOOGLES Y GORRO DURANTE LA ETAPA DE NATACIÓN ES OBLIGATORIO.</li>
-            </ul>
-            <br>
-            <b>COMPORTAMIENTO: </b><br>
-            <ul>
-                <li>Se espera que todos los participantes mantengan un comportamiento deportivo y respetuoso en todo momento.</li>
-                <li>Cualquier forma de conducta antideportiva, como el bloqueo intencional o el comportamiento agresivo, resultará en descalificación.</li>
-            </ul>
-            <br>
-            <b>DESARROLLO DE LA COMPETENCIA: </b>
-            <ul>
-                <li>Todos los participantes deben seguir la ruta oficial y las indicaciones del personal de seguridad.</li>
-                <li>No se permite el acceso a la zona de competencia a personas ajenas al evento.</li>
-                <li>La participación en la junta previa es obligatoria para conocer la ruta y el reglamento de competencia.</li>
-            </ul>
-            <br>
-            <b>ENTREGA DEL KIT: </b><br>
-            <ul>
-                <li>La entrega del kit se realizará exclusivamente en la fecha y lugar designados.</li>
-                <li>La firma de la hoja de exoneración es requisito para recibir el kit.</li>
-            </ul>
-            <br>
-            <b>INICIO DE LA COMPETENCIA: </b><br>
-            <ul>
-                <li>La competencia comenzará a las 07:00 a.m. del domingo, 16 de febrero de 2025.</li>
-                <li>Se seguirán las instrucciones del personal de organización para el inicio y durante la competencia.</li>
-            </ul>
-            <br>
-            <b>CRONOMETRAJE ELECTRÓNICO: </b><br>
-            <ul>
-                <li>Cada participante recibirá un chip para el cronometraje electrónico. Este debe colocarse según las instrucciones proporcionadas.</li>
-                <li>La pérdida o mal uso del chip resultará en la descalificación automática.</li>
-            </ul>
-            <br>
-            <b>ZONAS DE TRANSICIÓN:</b><br>
-            <ul>
-                <li>Habrá zonas designadas para la transición de natación a carrera. Estas áreas deben ser respetadas para evitar sanciones.</li>
-            </ul>
-            <br>
-            <b>ABASTECIMIENTO E HIDRATACIÓN: </b><br>
-            <ul>
-                <li>Puntos de abastecimiento y zonas de hidratación estarán ubicados a lo largo del recorrido. Se anima a los participantes a mantenerse hidratados.</li>
-            </ul>
-            <br>
-            <b>DERECHOS DE USO DE NOMBRE E IMAGEN:</b><br>
-            <ul>
-                <li>Al inscribirse, los participantes otorgan al comité organizador el derecho de utilizar su nombre e imagen con fines promocionales.</li>
-            </ul>
-            <br>
-            <b>DESCALIFICACIONES:</b><br>
-            <ul>
-                <li>Cualquier violación a las normas establecidas puede resultar en descalificación.</li>
-                <li>El uso de sustancias prohibidas o cualquier forma de dopaje llevará a la descalificación inmediata.</li>
-            </ul>
-            <br>
-            <b>DECISIONES DEL COMITÉ: </b><br>
-            <ul>
-                <li>El comité organizador tiene la autoridad para tomar decisiones finales sobre cualquier situación no contemplada en este reglamento.</li>
-            </ul>
-            <br>
-            <span>
-                Al participar en el Acuatlón Deportivo Oaxaca 2025, todos los competidores aceptan y se comprometen a cumplir con este reglamento. 
-                El desconocimiento de las normas no exime de su cumplimiento. ¡Les deseamos a todos los participantes una competencia exitosa y llena de logros!
-            </span>
-            <br>
-            <b>TRANSITORIOS: </b><br>
-            <b>UNICO. MODIFICACIONES AL REGLAMENTO: </b><br>
-            <p>El comité organizador se reserva el derecho de realizar modificaciones al reglamento, las cuales serán comunicadas a los participantes con anticipación.</p>
+        <h2>REGLAMENTO</h2>
+<br>
+<span>
+    El presente reglamento tiene como objetivo establecer las normas y directrices que regirán el desarrollo del Triatlón Triburones 2025. Todos los participantes están obligados a conocer y cumplir con estas disposiciones para garantizar un evento seguro y justo. Cualquier violación a este reglamento puede resultar en descalificación.
+</span>
+<br>
+<b>DISPOSICIONES GENERALES: </b><br>
+<ul>
+    <li>
+        La participación en el Triatlón Triburones 2025 implica la aceptación de las reglas y regulaciones establecidas por el comité organizador.
+    </li>
+    <li>
+        El reglamento tiene como objetivo garantizar la seguridad y equidad de la competencia.
+    </li>
+</ul>
+<br>
+<b>INSCRIPCIONES: </b><br>
+<ul>
+    <li>La inscripción es personal e intransferible. Cualquier intento de transferencia resultará en descalificación.</li>
+    <li>Los participantes deben proporcionar información veraz y completa durante el proceso de inscripción.</li>
+    <li>Solo se permitirá la participación a aquellos que hayan completado el proceso de inscripción de acuerdo con los plazos establecidos.</li>
+</ul>
+<br>
+<b>EDAD Y DOCUMENTACIÓN: </b><br>
+<ul>
+    <li>La edad válida para cada categoría es la que el participante tenga al 31 de diciembre de 2025.</li>
+    <li>Se requerirá la presentación de acta de nacimiento, credencial escolar o CURP para verificar la edad.</li>
+    <li>En caso de participantes menores de 18 años, es obligatoria la firma del padre o tutor en la hoja de exoneración.</li>
+</ul>
+<br>
+<b>SEGURIDAD Y EQUIPO: </b><br>
+<ul>
+    <li>Todos los participantes deben usar el equipo obligatorio durante toda la competencia.</li>
+    <li>EN LA ETAPA DE CARRERA EL TORSO DEBE IR CUBIERTO, EL NÚMERO DE COMPETENCIA ASIGNADO DEBE IR EN LA PARTE FRONTAL DEL TORSO.</li>
+    <li>EL USO DE GOOGLES Y GORRO DURANTE LA ETAPA DE NATACIÓN ES OBLIGATORIO.</li>
+</ul>
+<br>
+<b>COMPORTAMIENTO: </b><br>
+<ul>
+    <li>Se espera que todos los participantes mantengan un comportamiento deportivo y respetuoso en todo momento.</li>
+    <li>Cualquier forma de conducta antideportiva, como el bloqueo intencional o el comportamiento agresivo, resultará en descalificación.</li>
+</ul>
+<br>
+<b>DESARROLLO DE LA COMPETENCIA: </b>
+<ul>
+    <li>Todos los participantes deben seguir la ruta oficial y las indicaciones del personal de seguridad.</li>
+    <li>No se permite el acceso a la zona de competencia a personas ajenas al evento.</li>
+    <li>La participación en la junta previa es obligatoria para conocer la ruta y el reglamento de competencia.</li>
+</ul>
+<br>
+<b>ENTREGA DEL KIT: </b><br>
+<ul>
+    <li>La entrega del kit se realizará exclusivamente en la fecha y lugar designados.</li>
+    <li>La firma de la hoja de exoneración es requisito para recibir el kit.</li>
+</ul>
+<br>
+<b>INICIO DE LA COMPETENCIA: </b><br>
+<ul>
+    <li>La competencia comenzará a las 07:00 a.m. del sabado, 1 de marzo de 2025.</li>
+    <li>Se seguirán las instrucciones del personal de organización para el inicio y durante la competencia.</li>
+</ul>
+<br>
+<b>CRONOMETRAJE ELECTRÓNICO: </b><br>
+<ul>
+    <li>Cada participante recibirá un chip para el cronometraje electrónico. Este debe colocarse según las instrucciones proporcionadas.</li>
+    <li>La pérdida o mal uso del chip resultará en la descalificación automática.</li>
+</ul>
+<br>
+<b>ZONAS DE TRANSICIÓN:</b><br>
+<ul>
+    <li>Habrá zonas designadas para la transición de natación a carrera. Estas áreas deben ser respetadas para evitar sanciones.</li>
+</ul>
+<br>
+<b>ABASTECIMIENTO E HIDRATACIÓN: </b><br>
+<ul>
+    <li>Puntos de abastecimiento y zonas de hidratación estarán ubicados a lo largo del recorrido. Se anima a los participantes a mantenerse hidratados.</li>
+</ul>
+<br>
+<b>DERECHOS DE USO DE NOMBRE E IMAGEN:</b><br>
+<ul>
+    <li>Al inscribirse, los participantes otorgan al comité organizador el derecho de utilizar su nombre e imagen con fines promocionales.</li>
+</ul>
+<br>
+<b>DESCALIFICACIONES:</b><br>
+<ul>
+    <li>Cualquier violación a las normas establecidas puede resultar en descalificación.</li>
+    <li>El uso de sustancias prohibidas o cualquier forma de dopaje llevará a la descalificación inmediata.</li>
+</ul>
+<br>
+<b>DECISIONES DEL COMITÉ: </b><br>
+<ul>
+    <li>El comité organizador tiene la autoridad para tomar decisiones finales sobre cualquier situación no contemplada en este reglamento.</li>
+</ul>
+<br>
+<span>
+    Al participar en el Triatlón Triburones 2025, todos los competidores aceptan y se comprometen a cumplir con este reglamento. 
+    El desconocimiento de las normas no exime de su cumplimiento. ¡Les deseamos a todos los participantes una competencia exitosa y llena de logros!
+</span>
+<br>
+<b>TRANSITORIOS: </b><br>
+<b>Único. MODIFICACIONES AL REGLAMENTO: </b><br>
+<p>El comité organizador se reserva el derecho de realizar modificaciones al reglamento, las cuales serán comunicadas a los participantes con anticipación.</p>
+
         </div>
     </div>
 </script>
@@ -734,11 +776,10 @@
                 <b>PREMIACIÓN</b>
             </h2>
             <span>
-                Al concluir la competencia y tras recibir los resultados preliminares por parte de los jueces, <br>
-                el comité organizador llevará a cabo la ceremonia de premiación en presencia de invitados, medios de comunicación y el público en general.
+            Se premiará con medalla a los primeros tres lugares de cada categoría y rama y medalla de participación a todos los competidores.
             </span>
             <br>
-            <b>NOTA: </b>
+            <!-- <b>NOTA: </b>
             <ul>
                 <li>
                     Únicamente se premia a los 3 primeros lugares de cada categoría.
@@ -750,65 +791,65 @@
                     Si el competidor no recoge su premio, en el momento de la premiación, tendrá 10 días naturales después del evento para recogerlo en las instalaciones del Deportivo Oaxaca. <br>
                     En caso de pasar después del termino estipulado, el comité organizador no podrá hacerse responsable de la entrega.
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </script>
 
 <script id="resultados-plantilla" type="text/x-handlebars-template">
-  <div class="subtitle"><br>
+    <div class="subtitle"><br>
      <div class="col100" style="margin-top: -20px;">
      </div>  
   </div>
 </script>
 
-    <a class="popup-with-form" href="Aj-test-form" style="display:none;">Open form</a>
+<a class="popup-with-form" href="Aj-test-form" style="display:none;">Open form</a>
 
-    <div id="test-modal" class="white-popup-block mfp-hide">
-        <center>
-            <img src="{{asset("img/hbs.png")}}" height="90">
-        </center>
-        <div style="text-align: center;">
-            <span id="ttx+AF8-regsuccess" style="color:green; font-style: italic;"> Gracias por registrarte en la carrera {{$titulo}} </span>
-        </div>
-        <p style="text-align: justify;">
-            <span style="color:red !important" id="modal_message"> Te recordamos que no estas formalmente inscrito hasta realizar el pago, al dar clic en el botón de abajo te mostraremos la ventana de pago, donde podrás elegir pago con tarjeta y pago referenciado en tiendas OXXO, si pagas con tarjeta bancaria (débito o crédito) se te asignara un numero de corredor y quedaras formalmente inscrito. si eliges pago en OXXO, tendrás un lapso de 48 horas para realizar el pago, de lo contrario se borrara este pre-registro y tendrás que volver a hacerlo.
-            </span>
-        </p>
-        <p style="text-align: justify;" id="modal_end_message">
-           Te sugerimos hacerlo a la brevedad ya que los lugares están disponibles hasta agotar existencias.
-        </p>
-        <center>
-            <p>
-                <input type="hidden" name="url_participante" id="url_participante">
-                <input type="hidden" name="id_participante" id="id_participante">
-                <input type="button" class="popup-modal-dismiss" value="cerrar">
-                {{-- <a href="https://hbsports.com.mx/resultados" style="text-decoration: none;color:#000;" id="link">Resultados</a> --}}
-            </p>
-        </center>
+<div id="test-modal" class="white-popup-block mfp-hide">
+    <center>
+        <img src="{{asset("img/hbs.png")}}" height="90">
+    </center>
+    <div style="text-align: center;">
+        <span id="ttx+AF8-regsuccess" style="color:green; font-style: italic;"> Gracias por registrarte en la carrera {{$titulo}} </span>
     </div>
+    <p style="text-align: justify;">
+        <span style="color:red !important" id="modal_message"> Te recordamos que no estas formalmente inscrito hasta realizar el pago, al dar clic en el botón de abajo te mostraremos la ventana de pago, donde podrás elegir pago con tarjeta y pago referenciado en tiendas OXXO, si pagas con tarjeta bancaria (débito o crédito) se te asignara un numero de corredor y quedaras formalmente inscrito. si eliges pago en OXXO, tendrás un lapso de 48 horas para realizar el pago, de lo contrario se borrara este pre-registro y tendrás que volver a hacerlo.
+        </span>
+    </p>
+    <p style="text-align: justify;" id="modal_end_message">
+        Te sugerimos hacerlo a la brevedad ya que los lugares están disponibles hasta agotar existencias.
+    </p>
+    <center>
+        <p>
+            <input type="hidden" name="url_participante" id="url_participante">
+            <input type="hidden" name="id_participante" id="id_participante">
+            <input type="button" class="popup-modal-dismiss" value="cerrar">
+            {{-- <a href="https://hbsports.com.mx/resultados" style="text-decoration: none;color:#000;" id="link">Resultados</a> --}}
+        </p>
+    </center>
+</div>
 
-    <a class="popup-modal" href="#test-modal" style="display:none;" >Open modal</a>
-    <div class="footer">
-        <a href="https://www.hbsports.com.mx/" target="_blank">
-            <img src="https://hbsports.com.mx/images/header/header-1/logo-hardbeat.png" height="70">
-        </a>
-        <h3 class="title">-INFORMES</h3>
-        <!-- <a class="phone" href="tel:9511259335">
+<a class="popup-modal" href="#test-modal" style="display:none;">Open modal</a>
+<div class="footer">
+    <a href="https://www.hbsports.com.mx/" target="_blank">
+        <img src="https://hbsports.com.mx/images/header/header-1/logo-hardbeat.png" height="70">
+    </a>
+    <h3 class="title">-INFORMES</h3>
+    <!-- <a class="phone" href="tel:9511259335">
             (951) 125 9335
         </a> -->
-        <a class="phone" href="tel:9512434100">
-            (951) 243 4100
-        </a>
-        <a class="facebook" href="https://www.facebook.com/hardbeatsports" target="_blank">
-            fb/hardbeatsports
-        </a>
-        <a class="url" href="https://hbsports.com.mx/aviso-de-privacidad/" target="_blank">
-            Aviso de Privacidad
-        </a>
-    </div>
+    <a class="phone" href="tel:9512434100">
+        (951) 243 4100
+    </a>
+    <a class="facebook" href="https://www.facebook.com/hardbeatsports" target="_blank">
+        fb/hardbeatsports
+    </a>
+    <a class="url" href="https://hbsports.com.mx/aviso-de-privacidad/" target="_blank">
+        Aviso de Privacidad
+    </a>
+</div>
 
-    <!-- <a href="#" class="test" id="testButton" style="display:none;">↑</a>
+<!-- <a href="#" class="test" id="testButton" style="display:none;">↑</a>
     <a href="#registro-form" class="test-2" id="testDos">REGISTRO</a>
     <style>       
         .test {

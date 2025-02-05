@@ -29,21 +29,21 @@ use Illuminate\Support\Facades\Mail;
 
 class EventController extends Controller
 {
-    public $idevento = "17";
-    public $evento = "ACUTLÓN 7TIMA EDICIÓN";
-    public $tituloCorreo = "ACUTLÓN 7TIMA EDICIÓN";
-    public $tituloExcel = "ACUATLON_7TIMA_EDICION";
+    public $idevento = "18";
+    public $evento = "Triburones 2025";
+    public $tituloCorreo = "Triburones2025";
+    public $tituloExcel = "Triburones2025";
     public $phone = "(951) 243 41 00";
     public $secondPhone = "(951) 243 41 00";
     public $mailImage = "";
     public $backgroundImage = "";
-    public $sede = "Club Deportivo Oaxaca";
+    public $sede = "Bahía chahúe, Huatulco";
     public $comision = 80;
-    public $salida = "Club Deportivo Oaxaca";
-    public $meta = "Club Deportivo Oaxaca";
-    public $distancias = "pendientes";
-    public $fecha = "Domingo, 16 de febrero de 2025";
-    public $cupo = "150 competidores.";
+    public $salida = "Bahía Chahúe";
+    public $meta = "Bahía Chahúe";
+    public $distancias = "Infantiles, Super Sprint y Sprint";
+    public $fecha = "Sábado 01 de marzo y Domingo 02 de marzo de 2025";
+    public $cupo = "300 competidores.";
     public $horario_arranque = "07:00 a.m.";
     public $estado;
     private $api_url_discounts = "";
@@ -59,7 +59,7 @@ class EventController extends Controller
     private $ParticipantDiscount;
     private $Paid;
     private $EventCategory;
-    private $finished_racing = "2025-02-13"; //EL SISTEMA DEBE BLOQUEARSE EL DIA 13 DE FEBRERO A LAS 11:59 PM PARA YA NO RECIBIR MAS INSCRIPCIONES
+    private $finished_racing = "2025-03-01"; //EL SISTEMA DEBE BLOQUEARSE EL DIA 1 de marzo A LAS 11:59 PM PARA YA NO RECIBIR MAS INSCRIPCIONES
     private $EventCategoryDistance;
     public $ParticipantFaculty;
     public $ParticipantTShirt;
@@ -460,18 +460,15 @@ class EventController extends Controller
         if($participant === null)
             return redirect()->to('/')->with('error', 'No se encontró al participante');
 
-        
         $participantNumber = $this->ParticipantNumber::rightJoin('event_category_distances', 'event_category_distances.id', '=', 'participant_number.id_event_category_distance')
         ->where('id_participant', $id)
         ->where('event_category_distances.id_event', $this->idevento)
         ->first();
-        // dd($id);
-        $participantCategory = $participantNumber->id_event_category_distance;
         
-        $total = $this->paidServices->definePaidAmount();// Se obtiene el monto a pagar y la comisión
+        $total = $this->paidServices->definePaidAmount($participantNumber->id_category);// Se obtiene el monto a pagar y la comisión
         $listOfCategories = $this->dashboardServices->listAllCategoriesForEvent($this->idevento);
         
-        $categoria = $this->dashboardServices->generateCategory($participantNumber->id_event_category_distance, $listOfCategories);
+        $categoria = $this->dashboardServices->generateCategory($participantNumber->id_category, $listOfCategories);
         
         $pptor = $total['comision'];
 
@@ -484,11 +481,9 @@ class EventController extends Controller
         
         $precioTotal = $total["monto"] + $total["comision"] - $participanteDiscount; // Se genere el total a pagar tomando en cuenta el monto, comisión y descuento.
 
-        $conekta_public_key = $this->conekta_public_key;
+        $conekta_public_key = $this->conekta_public_key;        
         
-        $femsa_public_key = $this->femsa_public_key;
-        
-        return view('checkout/pages/checkout', compact('participant', 'paid', 'title', 'categoria', 'precioTotal', 'pptor', 'conekta_public_key', 'femsa_public_key'));
+        return view('checkout/pages/checkout', compact('participant', 'paid', 'title', 'categoria', 'precioTotal', 'pptor', 'conekta_public_key'));
     }
 
     public function checkEmail(Request $request) 
@@ -574,7 +569,7 @@ class EventController extends Controller
 
         $participant = Participant::where('participant.email', $data['email'])
         ->join('participant_number', 'participant.id', '=', 'participant_number.id_participant')
-        ->whereIn('participant_number.id_event_category_distance', [119,120,121,122,123,124,125,126,127]) //Actualizar las categorias segun el evento
+        ->whereIn('participant_number.id_event_category_distance', [128,129,130,131,132,133,134,135,136,137,138]) //Actualizar las categorias segun el evento
         ->select('participant.id')
         ->first();
 
@@ -590,7 +585,7 @@ class EventController extends Controller
                 'image_url' => $image,
                 'participante' => $data['name'],
                 'categoria' => $data['categoria'],
-                'link' => "https://www.hbsports.com.mx/acuatlon2025/checkout/".$idParticipant,                
+                'link' => "https://www.hbsports.com.mx/triburones2025/checkout/".$idParticipant,                
             ];
             $mail = new Mail(); // Se instancia la clase Mail
             //Se pasan como parametros: el destinatario del correo electronico, el contenido y un mensaje que se usa como un asunto

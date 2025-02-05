@@ -170,16 +170,18 @@ var BaseTableDatatables = function() {
                                 const nombre = datos.Info.nom_;
                                 const ncorredor = datos.Info.ncor;
 
-                                const categories = [                                    
-                                    { id: 119, descripcion: "Infantil 5-6 años" },
-                                    { id: 120, descripcion: "Infantil 7-8 años" },
-                                    { id: 121, descripcion: "Infantil 9-10 años" },
-                                    { id: 122, descripcion: "Infantil 11-12 años" },
-                                    { id: 123, descripcion: "Infantil 13-15 años" },
-                                    { id: 124, descripcion: "Juvenil Menor (16-17 años)" },
-                                    { id: 125, descripcion: "Libre (18-39 años)" },
-                                    { id: 126, descripcion: "Master (40 y más)" },
-                                    { id: 127, descripcion: "Mi primer acuatlón (18 y más)" },                                    
+                                const categories = [
+                                    { id: 128, descripcion: "Infantil 5-6 años" },
+                                    { id: 129, descripcion: "Infantil 7-8 años" },
+                                    { id: 130, descripcion: "Infantil 9-10 años" },
+                                    { id: 131, descripcion: "Infantil 11-12 años" },
+                                    { id: 132, descripcion: "Infantil 13-15 años" },
+                                    { id: 133, descripcion: "Juvenil Menor (16-17 años)" },
+                                    { id: 134, descripcion: "Libre (18-39 años)" },
+                                    { id: 135, descripcion: "Master (40-49 años)" },
+                                    { id: 136, descripcion: "Veteranos (50 y más)" },
+                                    { id: 137, descripcion: "Relevos" },
+                                    { id: 138, descripcion: "Novatos (18 y más)" },
                                     // Agrega más categorías según sea necesario
                                 ];
 
