@@ -562,15 +562,16 @@ class DashboardController extends Controller
      */
     public function availableShirtSizes(Request $request)
 {
-    $gender = isset($request->gender) ? $request->gender : "I";
+    // Obtener todas las tallas disponibles sin filtrar por género
+    $tallasHombres = $this->dashboardServices->showAvailableShirtSizes($this->tallaM, 'M', $this->callEventController()->idevento);
+    $tallasMujeres = $this->dashboardServices->showAvailableShirtSizes($this->tallaF, 'F', $this->callEventController()->idevento);
+    $tallasInfantiles = $this->dashboardServices->showAvailableShirtSizes($this->tallaInfantil, '', $this->callEventController()->idevento);
 
-    if ($gender === "M") {
-        return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaM, $gender, $this->callEventController()->idevento));
-    } else if ($gender === "F") {
-        return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaF, $gender, $this->callEventController()->idevento));
-    } else {
-        return response()->json($this->dashboardServices->showAvailableShirtSizes($this->tallaInfantil, "", $this->callEventController()->idevento));
-    }
+    // Combinar todas las tallas en un solo array
+    $tallasCombinadas = array_merge($tallasHombres, $tallasMujeres, $tallasInfantiles);
+
+    // Devolver todas las tallas combinadas
+    return response()->json($tallasCombinadas);
 }
     public function sendMail(Request $request){
         $image = asset("img/correo.jpg");
