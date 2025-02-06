@@ -129,6 +129,19 @@ class DashboardServices {
      */
     public function showAvailableShirtSizes($shirtSizeList, $gender, $event)
     {
+        $textTalla = array("XS" => "XS Masculino", 
+                            "S" => "S Masculino", 
+                            "M" => "M Masculino", 
+                            "L" => "L Masculino", 
+                            "XL" => "XL Masculino",
+                            "S" => "S Femenino", 
+                            "M" => "M Femenino", 
+                            "L" => "L Femenino",
+                            "6" => "6 Infantil", 
+                            "8" => "8 Infantil", 
+                            "10" => "10 Infantil",
+                            "12" => "12 Infantil", 
+                            "14" => "14 Infantil");
         $totalParticipants = 0;
         //remove numbers and only get array keys
         $listOfKeys = array_keys($shirtSizeList);
@@ -139,7 +152,7 @@ class DashboardServices {
             $totalParticipants = (int)$this->countTotalOfParticipantsConfirmedBySizes($shirtSize, $gender, $event);
             $total = (int)$shirtSizeList[$shirtSize] - $totalParticipants;
             if($total >= 0)
-                $results[] = array("id" => $shirtSize, "text" => $shirtSize);
+                $results[] = array("id" => $shirtSize, "text" => $textTalla[$shirtSize]);
         }
         
         return $results;

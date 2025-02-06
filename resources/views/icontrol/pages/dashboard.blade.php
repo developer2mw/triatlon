@@ -222,7 +222,7 @@
                                             <div class=" text-gray-darker animated fadeIn">
                                                 Extra Chica (XS)<br>
                                                 <label class="h2 font-w300 text-primary animated flipInX">
-                                                    <span class="14SBMP">{{$tallas['talla_xs_h']}}</span>
+                                                    <span class="14SBMP">{{$tallas['talla_xs_masculino_h']}}</span>
                                                 </label>
                                             </div>
                                         </div>

@@ -157,7 +157,7 @@ class IControlController extends Controller
     $tallaCatorceInfantil = $this->ParticipantNumber->countTotalOfParticipantsForShirtSize($this->callEventController()->idevento, '14');
 
     // Tallas para hombres adultos
-    $tallaXSHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'XS', 'M');
+    $tallaXSHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'XS Masculino', 'M');
     $tallaSHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'S', 'M');
     $tallaMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'M', 'M');
     $tallaLHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'L', 'M');
@@ -180,7 +180,7 @@ class IControlController extends Controller
         "talla_14" => $tallaCatorceInfantil,
 
         // Tallas para hombres adultos
-        "talla_xs_h" => $tallaXSHombre,
+        "talla_xs_masculino_h" => $tallaXSHombre,
         "talla_s_h" => $tallaSHombre,
         "talla_m_h" => $tallaMHombre,
         "talla_l_h" => $tallaLHombre,
