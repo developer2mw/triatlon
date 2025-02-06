@@ -302,9 +302,9 @@
                         <select class="select-home" name="talla" id="talla" required style="width: 100%;" placeholder="Jersey">
                             <option value="" selected disabled>Seleccione su talla</option>
                         </select>
-                        <p>Tallas Masculinas: XS, S, M, L, XL</p>
+                        <!-- <p>Tallas Masculinas: XS, S, M, L, XL</p>
                         <p>Tallas Masculinas: S, M, L</p>
-                        <p>Tallas Masculinas: 6, 8, 10, 12, 14</p>
+                        <p>Tallas Masculinas: 6, 8, 10, 12, 14</p> -->
                         <div class="input-icon"><i class="fa-solid fa-arrows-alt"></i></div>
                     </div>
                 </div>
