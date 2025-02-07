@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
-    public $tallaM = array("XS" => 15, "S" => 20, "M" => 30, "L" => 10, "XL" => 5);
+    public $tallaM = array("XSM" => 15, "SM" => 20, "MM" => 30, "LM" => 10, "XLM" => 5);
     public $tallaF = array("S" => 10, "M" => 15, "L" => 5);
     public $tallaInfantil = array("6" => 10, "8" => 10, "10" => 10,"12" => 15, "14" => 15);
     private $dashboardServices;

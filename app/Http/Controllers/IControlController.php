@@ -157,11 +157,11 @@ class IControlController extends Controller
     $tallaCatorceInfantil = $this->ParticipantNumber->countTotalOfParticipantsForShirtSize($this->callEventController()->idevento, '14');
 
     // Tallas para hombres adultos
-    $tallaXSHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'XS Masculino', 'M');
-    $tallaSHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'S', 'M');
-    $tallaMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'M', 'M');
-    $tallaLHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'L', 'M');
-    $tallaXLHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'XL', 'M');
+    $tallaXSMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'XSM', 'M');
+    $tallaSMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'SM', 'M');
+    $tallaMMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'MM', 'M');
+    $tallaLMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'LM', 'M');
+    $tallaXLMHombre = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'XLM', 'M');
 
     // Tallas para mujeres adultas
     $tallaSMujer = $this->ParticipantNumber->countTotalOfParticipantsForShirtSizeUsingGenre($this->callEventController()->idevento, 'S', 'F');
@@ -180,11 +180,11 @@ class IControlController extends Controller
         "talla_14" => $tallaCatorceInfantil,
 
         // Tallas para hombres adultos
-        "talla_xs_masculino_h" => $tallaXSHombre,
-        "talla_s_h" => $tallaSHombre,
-        "talla_m_h" => $tallaMHombre,
-        "talla_l_h" => $tallaLHombre,
-        "talla_xl_h" => $tallaXLHombre,
+        "talla_xsm_h" => $tallaXSMHombre,
+        "talla_sm_h" => $tallaSMHombre,
+        "talla_mm_h" => $tallaMMHombre,
+        "talla_lm_h" => $tallaLMHombre,
+        "talla_xlm_h" => $tallaXLMHombre,
 
         // Tallas para mujeres adultas
         "talla_s_m" => $tallaSMujer,

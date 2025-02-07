@@ -222,7 +222,7 @@
                                             <div class=" text-gray-darker animated fadeIn">
                                                 Extra Chica (XS)<br>
                                                 <label class="h2 font-w300 text-primary animated flipInX">
-                                                    <span class="14SBMP">{{$tallas['talla_xs_masculino_h']}}</span>
+                                                    <span class="14SBMP">{{$tallas['talla_xsm_h']}}</span>
                                                 </label>
                                             </div>
                                         </div>
@@ -230,7 +230,7 @@
                                             <div class=" text-gray-darker animated fadeIn">
                                                 Chica (S)<br>
                                                 <label class="h2 font-w300 text-primary animated flipInX">
-                                                    <span class="14MBMP">{{$tallas['talla_s_h']}}</span>
+                                                    <span class="14MBMP">{{$tallas['talla_sm_h']}}</span>
                                                     {{-- /<span class="14MBMT">{{$tallasM['S']}}</span> --}}
                                                 </label>
                                             </div>
@@ -240,7 +240,7 @@
                                             <div class=" text-gray-darker animated fadeIn">
                                                 Mediana (M)<br>
                                                 <label class="h2 font-w300 text-primary animated flipInX">
-                                                    <span class="14LBMP">{{$tallas['talla_m_h']}}</span>
+                                                    <span class="14LBMP">{{$tallas['talla_mm_h']}}</span>
                                                     {{-- /<span class="14LBMT">{{$tallasM['M']}}</span> --}}
                                                 </label>
                                             </div>
@@ -249,7 +249,7 @@
                                             <div class=" text-gray-darker animated fadeIn">
                                                 Grande (L)<br>
                                                 <label class="h2 font-w300 text-primary animated flipInX">
-                                                    <span class="14XBMP">{{$tallas['talla_l_h']}}</span>
+                                                    <span class="14XBMP">{{$tallas['talla_lm_h']}}</span>
                                                     {{-- /<span class="14XBMT">{{$tallasM['L']}}</span> --}}
                                                 </label>
                                             </div>
@@ -258,7 +258,7 @@
                                             <div class=" text-gray-darker animated fadeIn">
                                                 Extra Grande (XL)<br>
                                                 <label class="h2 font-w300 text-primary animated flipInX">
-                                                    <span class="14XBMP">{{$tallas['talla_xl_h']}}</span>
+                                                    <span class="14XBMP">{{$tallas['talla_xlm_h']}}</span>
                                                     {{-- /<span class="14XBMT">{{$tallasM['XL']}}</span> --}}
                                                 </label>
                                             </div>

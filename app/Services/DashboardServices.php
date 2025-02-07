@@ -129,11 +129,11 @@ class DashboardServices {
      */
     public function showAvailableShirtSizes($shirtSizeList, $gender, $event)
     {
-        $textTalla = array("XS" => "XS Masculino", 
-                            "S" => "S Masculino", 
-                            "M" => "M Masculino", 
-                            "L" => "L Masculino", 
-                            "XL" => "XL Masculino",
+        $textTalla = array("XSM" => "XS Masculino", 
+                            "SM" => "S Masculino", 
+                            "MM" => "M Masculino", 
+                            "LM" => "L Masculino", 
+                            "XLM" => "XL Masculino",
                             "S" => "S Femenino", 
                             "M" => "M Femenino", 
                             "L" => "L Femenino",
